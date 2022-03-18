@@ -41,8 +41,8 @@ h1 {
 
 h2 {
     font-family: 'Inter', sans-serif;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 38px;
+    line-height: 50px;
     font-weight: 400;
 }
 
@@ -137,8 +137,12 @@ h2 {
     line-height: 36px;
 }
 
+.section {
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
 .section-about {
-    margin-top: 50px;
     color: #1C69E2;
 }
 
@@ -148,10 +152,7 @@ h2 {
     text-align: center;
     font-size: 26px;
     line-height: 36px;
-}
-
-.bold {
-    font-weight: 500;
+    padding-bottom: 30px;
 }
 
 .activities-items {
@@ -159,7 +160,7 @@ h2 {
     flex-flow: row wrap;
     justify-content: space-evenly;
     gap: 30px;
-    padding: 30px 0 20px 0;
+    padding: 30px 0;
 }
 
 .activity-item {
@@ -217,7 +218,6 @@ h2 {
 }
 
 .section-services {
-    margin-top: 50px;
     background-color: #1C69E2;
     color: #F5BFCF;
 }
@@ -226,7 +226,6 @@ h2 {
     max-width: 520px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 15px;
 }
 
 .services-items {
@@ -234,8 +233,7 @@ h2 {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 60px;
-    padding-top: 30px;
+    margin-top: 50px;
     gap: 75px;
 }
 
@@ -268,5 +266,74 @@ h2 {
 
 .service-item-text {
     line-height: 32px;
-    padding-top: 15px;
+    padding: 15px 0 20px 0;
+}
+
+.section-contacts {
+    padding-top: 10px;
+    color: #1C69E2;
+}
+
+.cont {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.building-photo {
+    width: 300px;
+}
+
+.footer {
+    background-color: #1C69E2;
+    margin-top: 20px;
+    font-size: 16px;
+    height: 180px;
+}
+
+.footer a:hover {
+    color: #F5BFCF;
+}
+
+.footer-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.footer-navigation {
+    list-style: none;
+}
+
+.footer-contacts-list {
+    list-style: none;
+}
+
+.socials {
+    width: 130px;
+}
+
+.social-buttons {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    fill: #ffffff;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    fill: #F5BFCF;
 }
