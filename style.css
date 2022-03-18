@@ -24,26 +24,33 @@ body {
 a {
     text-decoration: none;
     font-weight: 500;
-    color: #ffffff;
+    color: #da89b4;
     transition: 0.3s;
 }
 
 a:hover {
-    color: #1C69E2;
+    color: #be6494;
 }
 
 h1 {
     font-family: 'Amatic SC', cursive;
-    font-size: 72px;
-    font-weight: 300;
+    font-size: 82px;
+    font-weight: normal;
     line-height: 80px;
+    letter-spacing: 3px;
 }
 
 h2 {
-    font-family: 'Inter', sans-serif;
-    font-size: 38px;
-    line-height: 50px;
-    font-weight: 400;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.header-contacts {
+    padding-top: 5px;
 }
 
 .contacts-list {
@@ -115,6 +122,19 @@ h2 {
     font-size: 20px;
 }
 
+.nav-link {
+    border: 1px solid #da89b4;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 #da89b4;
+    padding: 10px;
+    transition: 0.4s;
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    color: #da89b4;
+}
+
 .section-hero {
     max-width: 100%;
     height: 627px;
@@ -122,14 +142,14 @@ h2 {
     background-image: url("./assets/images/hero-bg.png"),
                       url("./assets/images/hero-bg-large.png");
     background-repeat: no-repeat, no-repeat;
-    background-position: 85%, 100%;
+    background-position: 90% 10%, 100%;
     background-size: contain, cover;
     padding-left: 150px;
 }
 
 .hero-title {
     max-width: 525px;
-    padding-top: 180px;
+    padding-top: 160px;
 }
 
 .hero-text {
@@ -138,8 +158,7 @@ h2 {
 }
 
 .section {
-    margin-top: 20px;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .section-about {
@@ -153,6 +172,7 @@ h2 {
     font-size: 26px;
     line-height: 36px;
     padding-bottom: 30px;
+    color: #ffffff;
 }
 
 .activities-items {
@@ -234,13 +254,14 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 50px;
+    padding-bottom: 20px;
     gap: 75px;
 }
 
 .service-item {
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 100px;
+    background-size: 100px 100px;
     max-width: 350px;
     padding-top: 140px;
     text-align: center;
@@ -262,6 +283,7 @@ h2 {
     font-size: 26px;
     font-weight: 400;
     line-height: 36px;
+    color: #ffffff;
 }
 
 .service-item-text {
@@ -274,13 +296,19 @@ h2 {
     color: #1C69E2;
 }
 
-.cont {
+.find-us {
     margin-top: 10px;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
     gap: 10px;
+}
+
+.map {
+    width: 70%;
+    height: 500px;
+    border: none;
 }
 
 .building-photo {
@@ -290,12 +318,17 @@ h2 {
 .footer {
     background-color: #1C69E2;
     margin-top: 20px;
+    padding-top: 20px;
     font-size: 16px;
-    height: 180px;
+    height: 200px;
+}
+
+.footer a {
+    color: #F5BFCF;
 }
 
 .footer a:hover {
-    color: #F5BFCF;
+    color: #da89b4;
 }
 
 .footer-container {
@@ -304,6 +337,11 @@ h2 {
     flex-direction: row;
     justify-content: space-evenly;
     gap: 20px;
+    height: 160px;
+}
+
+.copyright {
+    align-self: flex-end;
 }
 
 .footer-navigation {
@@ -316,6 +354,11 @@ h2 {
 
 .socials {
     width: 130px;
+}
+
+.social-text {
+    font-weight: 500;
+    text-align: center;
 }
 
 .social-buttons {
@@ -332,6 +375,11 @@ h2 {
     height: 30px;
     fill: #ffffff;
     transition: 0.3s;
+}
+
+.icon-tg {
+    width: 35px;
+    height: 35px;
 }
 
 .icon:hover {
