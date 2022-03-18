@@ -13,27 +13,30 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    background-color: rgb(151, 255, 232);
+    background-color: #F5BFCF;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 300;
+    line-height: 30px;
+    color: #ffffff;
 }
 
 a {
     text-decoration: none;
-    font-weight: 400;
-    color: #000000;
+    font-weight: 500;
+    color: #ffffff;
     transition: 0.3s;
 }
 
 a:hover {
-    color: #ffffff;
+    color: #1C69E2;
 }
 
 h1 {
     font-family: 'Amatic SC', cursive;
     font-size: 64px;
     font-weight: 300;
+    line-height: 64px;
 }
 
 .container {
@@ -42,7 +45,7 @@ h1 {
 }
 
 .nav {
-    height: 90px;
+    height: 107px;
     display: flex;
     align-items: flex-end;
     padding-bottom: 5px;
@@ -56,17 +59,97 @@ h1 {
     text-transform: uppercase;
 }
 
-.hero {
+.section-hero {
     max-width: 100%;
-    height: 700px;
-    background-color: rgb(255, 255, 255);
-    background-image: url("./assets/images/hero-bg.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    padding-left: 80px;
+    height: 650px;
+    background-color: #1C69E2;
+    background-image: url("./assets/images/hero-bg.png"),
+                      url("./assets/images/hero-bg-large.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 85%, 100%;
+    background-size: contain, cover;
+    padding-left: 150px;
 }
 
 .hero-title {
-    width: 500px;
-    padding-top: 200px;
+    width: 525px;
+    padding-top: 180px;
+}
+
+.section-about {
+    margin-top: 50px;
+    color: #1C69E2;
+}
+
+.about-us {
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.service-items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.service-item {
+    width: 350px;
+    padding: 310px 15px 15px 15px;
+    border: 1px solid #da89b4;
+    border-radius: 30px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 300px;
+    box-shadow: 4px 4px 0 #da89b4;
+}
+
+.service-item:nth-child(1) {
+    background-image: url("./assets/svg/mind.svg");
+}
+
+.service-item:nth-child(2) {
+    background-image: url("./assets/svg/art.svg");
+}
+
+.service-item:nth-child(3) {
+    background-image: url("./assets/svg/active.svg");
+    background-size: 310px;
+}
+
+.service-item:nth-child(4) {
+    background-image: url("./assets/svg/support.svg");
+}
+
+.service-item:nth-child(5) {
+    background-image: url("./assets/svg/ed.svg");
+    background-size: 320px;
+}
+
+.service-item:nth-child(6) {
+    background-image: url("./assets/svg/culture.svg");
+    background-size: 350px;
+}
+
+.service-item:nth-child(7) {
+    background-image: url("./assets/svg/conf.svg");
+    background-size: 350px;
+}
+
+.service-item:nth-child(8) {
+    background-image: url("./assets/svg/sport.svg");
+    background-size: 340px;
+}
+
+.service-item:nth-child(9) {
+    background-image: url("./assets/svg/music.svg");
+    background-size: 320px;
 }
