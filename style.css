@@ -116,7 +116,7 @@ h2 {
 .nav-list {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 5px;
     list-style: none;
     text-transform: uppercase;
     font-size: 20px;
@@ -320,7 +320,6 @@ h2 {
     background-color: #1C69E2;
     padding-top: 20px;
     font-size: 16px;
-    height: 200px;
 }
 
 .footer a {
@@ -337,7 +336,6 @@ h2 {
     flex-direction: row;
     justify-content: space-evenly;
     gap: 20px;
-    height: 160px;
 }
 
 .copyright {
@@ -384,4 +382,70 @@ h2 {
 
 .icon:hover {
     fill: #F5BFCF;
+}
+
+@media (max-width: 1200px) {
+
+    .header {
+        height: 160px;
+    }
+
+    .contacts-list {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .contacts-list-item {
+        width: 155px;
+    }
+
+    .nav-link {
+        padding: 7px;
+        font-size: 18px;
+    }
+
+    .section-hero {
+        padding-left: 80px;
+        height: 615px;
+    }
+
+    .hero-title {
+        font-size: 67px;
+        line-height: 64px;
+        max-width: 485px;
+    }
+
+    .hero-text {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 30px 0 30px 0;
+    }
+
+    .about-us {
+        font-size: 24px;
+        padding: 0 10px;
+        line-height: 32px;
+    }
+
+    .footer-contacts {
+        width: 350px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    html, 
+    body {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+    }
 }
