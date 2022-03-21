@@ -49,19 +49,47 @@ h2 {
     letter-spacing: 3px;
 }
 
-.header-contacts {
-    padding-top: 5px;
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
-.contacts-list {
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 135px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger .line {
+    width: 50px;
+    height: 3px;
+    background-color: #ffffff;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.header-contacts-list {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
     list-style: none;
-    justify-content: space-around;
-    align-items: center;
     font-weight: 300;
     font-size: 16px;
-    gap: 25px;
+    padding: 10px;
 }
 
 .contacts-list-item {
@@ -95,27 +123,16 @@ h2 {
     background-image: url("./assets/svg/msg.svg");
 }
 
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-.header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 100px;
-}
-
 .nav {
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 5px;
+
 }
 
 .nav-list {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 5px 4px 0;
+    margin-left: auto;
     gap: 5px;
     list-style: none;
     text-transform: uppercase;
@@ -386,21 +403,26 @@ h2 {
 
 @media (max-width: 1200px) {
 
-    .header {
+    .header-container {
         height: 160px;
     }
 
-    .contacts-list {
+    .header-contacts-list {
         flex-wrap: wrap;
-        gap: 15px;
+        justify-content: space-around;
+        gap: 20px;
     }
 
     .contacts-list-item {
-        width: 155px;
+        margin-left: 10px;
+    }
+
+    .nav-list {
+        padding: 0 5px 0 0;
     }
 
     .nav-link {
-        padding: 7px;
+        padding: 8px 6px;
         font-size: 18px;
     }
 
@@ -429,6 +451,10 @@ h2 {
         line-height: 32px;
     }
 
+    .map {
+        width: 100%;
+    }
+
     .footer-contacts {
         width: 350px;
     }
@@ -443,9 +469,19 @@ h2 {
         overflow-x: hidden;
     }
 
+    .nav-list {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: auto;
+        padding: 5px 10px;
+    }
+
     .footer-container {
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
         text-align: center;
     }
 }
