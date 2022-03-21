@@ -152,7 +152,7 @@ h2 {
     max-width: 100%;
     height: 627px;
     background-color: #1C69E2;
-    background-image: url("./assets/images/hero-bg.png"),
+    background-image: url(""),
                       url("./assets/images/hero-bg-large.png");
     background-repeat: no-repeat, no-repeat;
     background-position: 90% 10%, 100%;
@@ -160,14 +160,17 @@ h2 {
     padding-left: 150px;
 }
 
-.hero-title {
+.hero-text {
     max-width: 525px;
-    padding-top: 160px;
+    font-size: 50px;
+    line-height: 70px;
+    padding-top: 130px;
 }
 
-.hero-text {
-    font-size: 26px;
-    line-height: 36px;
+.hero-title {
+    max-width: 525px;
+    font-size: 85px;
+    
 }
 
 .section {
@@ -182,72 +185,10 @@ h2 {
     max-width: 1180px;
     margin: 0 auto;
     text-align: center;
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 40px;
+    line-height: 60px;
     padding-bottom: 30px;
     color: #ffffff;
-}
-
-.activities-items {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    gap: 30px;
-    padding: 30px 0;
-}
-
-.activity-item {
-    width: 350px;
-    padding: 310px 15px 15px 15px;
-    border: 1px solid #da89b4;
-    border-radius: 30px;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 300px;
-    box-shadow: 4px 4px 0 #da89b4;
-}
-
-.activity-item:nth-child(1) {
-    background-image: url("./assets/svg/mind.svg");
-}
-
-.activity-item:nth-child(2) {
-    background-image: url("./assets/svg/art.svg");
-}
-
-.activity-item:nth-child(3) {
-    background-image: url("./assets/svg/active.svg");
-    background-size: 310px;
-}
-
-.activity-item:nth-child(4) {
-    background-image: url("./assets/svg/support.svg");
-}
-
-.activity-item:nth-child(5) {
-    background-image: url("./assets/svg/ed.svg");
-    background-size: 320px;
-}
-
-.activity-item:nth-child(6) {
-    background-image: url("./assets/svg/culture.svg");
-    background-size: 350px;
-}
-
-.activity-item:nth-child(7) {
-    background-image: url("./assets/svg/conf.svg");
-    background-size: 350px;
-}
-
-.activity-item:nth-child(8) {
-    background-image: url("./assets/svg/sport.svg");
-    background-size: 340px;
-}
-
-.activity-item:nth-child(9) {
-    background-image: url("./assets/svg/music.svg");
-    background-size: 320px;
 }
 
 .section-services {
@@ -470,14 +411,9 @@ td {
         height: 615px;
     }
 
-    .hero-title {
-        font-size: 67px;
-        line-height: 64px;
-        max-width: 485px;
-    }
-
     .hero-text {
-        font-size: 24px;
+        padding-top: 100px;
+        font-size: 48px;
     }
 
     section {
@@ -485,9 +421,7 @@ td {
     }
 
     .about-us {
-        font-size: 24px;
         padding: 0 10px;
-        line-height: 32px;
     }
 
     .map {
@@ -612,9 +546,9 @@ td {
         padding-left: 50px;
     }
 
-    .hero-title {
-        padding-top: 100px;
-        font-size: 64px;
+    .hero-text {
+        padding-top: 40px;
+        font-size: 46px;
         max-width: 475px;
     }
 }
@@ -628,15 +562,21 @@ td {
     }
 
     .hero-title {
-        padding-top: 70px;
+        font-size: 78px;
+        line-height: 70px;
     }
 
     .hero-text {
-        font-size: 20px;
+        padding-top: 30px;
+        font-size: 40px;
     }
 
     .section {
         padding: 20px 0;
+    }
+
+    .about-us {
+        font-size: 36px;
     }
 
     .footer-container {
@@ -662,10 +602,15 @@ td {
         background-size: 345px, cover;
     }
 
-    .hero-title {
-        padding-top: 41px;
-        font-size: 60px;
+    .hero-text {
+        padding-top: 20px;
+        font-size: 38px;
+        line-height: 40px;
         max-width: 355px;
+    }
+
+    .hero-title {
+        font-size: 70px;
     }
 }
 
@@ -725,38 +670,14 @@ td {
     }
 
     .hero-title {
-        padding-top: 0;
         font-size: 50px;
-        max-width: 355px;
+        
     }
 
     .hero-text {
-        font-size: 18px;
-    }
-
-    .activity-item {
-        width: 280px;
-        background-size: 280px;
-    }
-
-    .activity-item:nth-child(3) {
-        background-size: 280px;
-    }
-
-    .activity-item:nth-child(5) {
-        background-size: 280px;
-    }
-
-    .activity-item:nth-child(6) {
-        background-size: 280px;
-    }
-
-    .activity-item:nth-child(7) {
-        background-size: 280px;
-    }
-
-    .activity-item:nth-child(8) {
-        background-size: 280px;
+        font-size: 38px;
+        padding-top: 0;
+        max-width: 355px;
     }
 
     .footer-container {
