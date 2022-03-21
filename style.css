@@ -305,6 +305,14 @@ td {
     font-weight: 500;
 }
 
+.org-table {
+    margin: 0 auto;
+}
+
+.ph-list-items {
+    margin-left: 20px;
+}
+
 .section-schedule {
     background-image: url("./assets/images/bg.png");
     background-repeat: repeat;
@@ -576,7 +584,16 @@ td {
     }
 
     .about-us {
-        font-size: 36px;
+        font-size: 34px;
+    }
+
+    table, 
+    td {
+    padding: 8px 10px;
+    }
+
+    .org-table {
+        font-size: 16px;
     }
 
     .footer-container {
@@ -612,6 +629,11 @@ td {
     .hero-title {
         font-size: 70px;
     }
+
+    .about-us {
+        font-size: 32px;
+    }
+
 }
 
 @media (max-width: 580px) {
@@ -628,6 +650,10 @@ td {
         background-size: 322px, cover;
     }
         
+    .about-us {
+        font-size: 30px;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -661,6 +687,14 @@ td {
         align-items: center;
     }
 
+    .about-us {
+        font-size: 28px;
+    }
+
+    .org-table {
+        font-size: 12px;
+    }
+
 }
 
 @media (max-width: 370px) {
@@ -669,9 +703,12 @@ td {
         height: 330px;
     }
 
+    .section-hero {
+        padding-left: 20px;
+    }
+
     .hero-title {
-        font-size: 50px;
-        
+        font-size: 54px;
     }
 
     .hero-text {
