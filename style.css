@@ -341,6 +341,29 @@ h2 {
     padding: 10px 20px;
 }
 
+.section-organization {
+    background-image: url("./assets/images/bg.png");
+    background-repeat: repeat;
+    padding: 0 20px;
+    color: #1C69E2;
+}
+
+.org-description {
+    text-align: center;
+}
+
+table, 
+td {
+    border: 1px solid #1C69E2;
+    border-collapse: collapse;
+    padding: 10px 30px;
+    vertical-align: middle;
+}
+
+.bold {
+    font-weight: 500;
+}
+
 .footer {
     background-color: #1C69E2;
     padding: 20px 0;
