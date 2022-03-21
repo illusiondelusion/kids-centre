@@ -364,6 +364,14 @@ td {
     font-weight: 500;
 }
 
+.section-schedule {
+    background-image: url("./assets/images/bg.png");
+    background-repeat: repeat;
+    padding: 0 20px;
+    color: #1C69E2;
+    min-height: 500px;
+}
+
 .footer {
     background-color: #1C69E2;
     padding: 20px 0;
