@@ -119,6 +119,7 @@ h2 {
     list-style: none;
     text-transform: uppercase;
     font-size: 20px;
+    white-space: nowrap;
 }
 
 .nav-link {
@@ -132,6 +133,19 @@ h2 {
 
 .nav-link:hover {
     color: #da89b4;
+}
+
+.main {
+    position: relative;
+    background-color: #F5BFCF;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #da89b4;
 }
 
 .section-hero {
@@ -313,6 +327,18 @@ h2 {
 
 .building-photo {
     width: 300px;
+}
+
+.section-documents {
+    background-image: url("./assets/images/bg.png");
+    background-repeat: repeat;
+    color: #1C69E2;
+    min-height: 500px;
+}
+
+.docs-list {
+    list-style: none;
+    padding: 10px 20px;
 }
 
 .footer {
@@ -498,7 +524,8 @@ h2 {
         background-color: rgba(28, 104, 226, 0.9);
         border: 1px solid rgba(19, 69, 150, 0.8);
         border-radius: 0 20px 20px 0;
-        box-shadow: 4px 4px 0 rgba(19, 69, 150, 0.7);   
+        box-shadow: 4px 4px 0 rgba(19, 69, 150, 0.7);
+        height: 100%;   
     }
     
     .nav-open {
@@ -518,7 +545,7 @@ h2 {
         justify-content: flex-start;
         padding: 100px 0 20px 50px;
         gap: 40px;
-        height: 1024px;
+        white-space: break-spaces;
     }
 
     .nav-link {
@@ -614,7 +641,6 @@ h2 {
 @media (max-width: 580px) {
 
     .nav-list {
-        height: 950px;
         padding: 100px 0 20px 40px;
     }
 
