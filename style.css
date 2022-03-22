@@ -391,8 +391,9 @@ td {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .icon {
@@ -404,8 +405,8 @@ td {
 }
 
 .icon-tg {
-    width: 35px;
-    height: 35px;
+    width: 33px;
+    height: 33px;
 }
 
 .icon:hover {
