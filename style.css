@@ -56,11 +56,16 @@ h2 {
 }
 
 .header-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 135px;
     padding: 0 20px;
+}
+
+.upper-header-container {
+    display: none;
 }
 
 .hamburger {
@@ -109,6 +114,24 @@ h2 {
     background-image: url("./assets/svg/msg.svg");
 }
 
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 70px;
+    height: 70px;
+    background-image: url("./assets/images/logo-brighter.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .nav-list {
     display: flex;
     flex-direction: row;
@@ -152,11 +175,11 @@ h2 {
     max-width: 100%;
     height: 627px;
     background-color: #1C69E2;
-    background-image: url(""),
+    background-image: url("./assets/images/logo.png"),
                       url("./assets/images/hero-bg-large.png");
     background-repeat: no-repeat, no-repeat;
-    background-position: 90% 10%, 100%;
-    background-size: contain, cover;
+    background-position: 88% 50%, 100%;
+    background-size: 520px, cover;
     padding-left: 150px;
 }
 
@@ -274,7 +297,7 @@ h2 {
     background-image: url("./assets/images/bg.png");
     background-repeat: repeat;
     color: #1C69E2;
-    min-height: 500px;
+    min-height: calc(100vh - 305px);
 }
 
 .docs-list {
@@ -318,7 +341,7 @@ td {
     background-repeat: repeat;
     padding: 0 20px;
     color: #1C69E2;
-    min-height: 500px;
+    min-height: calc(100vh - 305px);
 }
 
 .footer {
@@ -389,7 +412,7 @@ td {
     fill: #F5BFCF;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
 
     .header-container {
         height: 160px;
@@ -417,6 +440,8 @@ td {
     .section-hero {
         padding-left: 80px;
         height: 615px;
+        background-size: 490px, cover;
+        background-position: 95% 50%, 100%;
     }
 
     .hero-text {
@@ -444,6 +469,12 @@ td {
     body {
         position: relative;
         overflow-x: hidden;
+    }
+
+    .upper-header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     
     .hamburger {
@@ -527,6 +558,23 @@ td {
         font-size: 30px;
     }
 
+    .logo {
+        display: none;
+    }
+
+    .bird-pages {
+        margin-top: 8px;
+        width: 85px;
+        background-image: url("./assets/images/logo-brighter.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .section-hero {
+        background-size: 430px, cover;
+        background-position: 95% 50%, 100%;
+    }
+
     .footer-container {
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -548,8 +596,8 @@ td {
 @media (max-width: 960px) {
 
     .section-hero {
-        background-position: 99% 5%, 100%;
-        background-size: 446px, cover;
+        background-position: 98% 50%, 100%;
+        background-size: 400px, cover;
         height: 540px;
         padding-left: 50px;
     }
@@ -565,7 +613,8 @@ td {
 
     .section-hero {
         padding-left: 35px;
-        background-size: 420px, cover;
+        background-size: 320px, cover;
+        background-position: 98% 30%, 100%;
         height: 500px;
     }
 
@@ -616,7 +665,8 @@ td {
     }
 
     .section-hero {
-        background-size: 345px, cover;
+        background-size: 290px, cover;
+        background-position: 98% 10%, 100%;
     }
 
     .hero-text {
@@ -636,6 +686,14 @@ td {
 
 }
 
+@media (max-width: 630px) {
+
+    .nav {
+        border-radius: 0 0 0 0;
+    }
+
+}
+
 @media (max-width: 580px) {
 
     .nav-list {
@@ -647,7 +705,8 @@ td {
     }
 
     .section-hero {
-        background-size: 322px, cover;
+        background-size: 230px, cover;
+        background-position: 98% 6%, 100%;
     }
         
     .about-us {
@@ -659,7 +718,7 @@ td {
 @media (max-width: 500px) {
 
     .section-hero {
-        background-size: 0px, cover;
+        background-size: 190px, cover;
     }
 
     .nav-open {
@@ -687,6 +746,10 @@ td {
         align-items: center;
     }
 
+    .section-hero {
+        background-size: 160px, cover;
+    }
+
     .about-us {
         font-size: 28px;
     }
@@ -705,6 +768,7 @@ td {
 
     .section-hero {
         padding-left: 20px;
+        background-size: 105px, cover;
     }
 
     .hero-title {
@@ -717,8 +781,30 @@ td {
         max-width: 355px;
     }
 
+    .about-us {
+        font-size: 24px;
+        line-height: 48px;
+    }    
+
     .footer-container {
         max-width: 214px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .section-hero {
+        background-size: 0px, cover;
+    }
+
+    .bird {
+        display: block;
+        margin-top: 8px;
+        width: 85px;
+        background-image: url("./assets/images/logo-brighter.png");
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
 }
