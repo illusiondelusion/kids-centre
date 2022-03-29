@@ -25,12 +25,30 @@
 
                     </div>        
                 </div>    
-                    <ul class="header-contacts-list">
-                        <li class="contacts-list-item">г.Волжский, ул. им. Карбышева, д. 28</li>
-                        <li class="contacts-list-item"><a href="tel:+79053956822">+7 (905) 395-68-22</a> <a class="contact-link-top" href="tel:+79093816787">+7 (909) 381-67-87</a></li>
-                        <li class="contacts-list-item">Пн. - Пт. 14:00-20:00</li>
-                        <li class="contacts-list-item"><a class="contact-link" href="mailto:sinyaya_ptica2022@mail.ru">sinyaya_ptica2022@mail.ru</a></li>
-                    </ul>
+                <ul class="header-contacts-list">
+                    <li class="contacts-list-item" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="addressLocality">г.Волжский</span>, 
+                        <span itemprop="streetAddress">ул. им. Карбышева, 28</span>
+                    </li>
+                    <li class="contacts-list-item">
+                        <a href="tel:+79053956822">
+                            <span itemprop="telephone">+7 (905) 395-68-22</span>
+                        </a> 
+                        <a href="tel:+79093816787">
+                            <span itemprop="telephone">+7 (909) 381-67-87</span>
+                        </a>
+                    </li>
+                    <li class="contacts-list-item">
+                        <time itemprop="openingHours" datetime="Mon,Tu,Wed,Th,Fri 14:00−20:00">
+                         Пн. - Пт. 14:00-20:00
+                        </time>
+                    </li>
+                    <li class="contacts-list-item">
+                        <a class="contact-link" href="mailto:sinyaya_ptica2022@mail.ru">
+                            <span itemprop="email">sinyaya_ptica2022@mail.ru</span>
+                        </a>
+                    </li>
+                </ul>
                     <div class="logo">
                     
                     </div>
@@ -61,7 +79,9 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-container">
-                <span class="copyright">© 2022 "Синяя птица"</span>
+                <div class="copyright" itemscope itemtype="http://schema.org/Organization">
+                    © 2022 <span itemprop="name">ВРАНО "Центр социальной поддержки и развития детей "Синяя птица""</span>
+                </div>
                 <ul class="footer-navigation">
                     <li><a href="./organization.html">Сведения об организации</a></li>
                     <li><a href="./schedule.html">Расписание</a></li>
@@ -69,10 +89,30 @@
                     <li><a href="./index.html#contacts">Контакты</a></li>
                 </ul>
                 <ul class="footer-contacts-list">
-                    <li class="contacts-list-item footer-contacts">г.Волжский, ул. им. Карбышева, д. 28</li>
-                    <li class="contacts-list-item footer-contacts"><a href="tel:+79053956822">+7 (905) 395-68-22</a>, <a href="tel:+79093816787">+7 (909) 381-67-87</a></li>
-                    <li class="contacts-list-item footer-contacts">Время работы: Пн. - Пт. 14:00-20:00</li>
-                    <li class="contacts-list-item footer-contacts"><a href="mailto:sinyaya_ptica2022@mail.ru">sinyaya_ptica2022@mail.ru</a></li>
+                    <li class="contacts-list-item footer-contacts" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="addressLocality">г.Волжский</span>, 
+                        <span itemprop="streetAddress">ул. им. Карбышева, 28</span>
+                    </li>
+                    <li class="contacts-list-item footer-contacts">
+                        <a href="tel:+79053956822">
+                            <span itemprop="telephone">+7 (905) 395-68-22</span>
+                        </a>,
+                        <a href="tel:+79093816787">
+                            <span itemprop="telephone">+7 (909) 381-67-87</span>
+                        </a>
+                    </li>
+                    <li class="contacts-list-item footer-contacts">
+                        <time itemprop="openingHours" datetime="Mo-Fr 14:00-20:00">
+                            Пн. - Пт. 14:00-20:00
+                        </time>
+                    </li>
+                    <li class="contacts-list-item footer-contacts">
+                        <a href="mailto:sinyaya_ptica2022@mail.ru">
+                            <span itemprop="email">
+                                sinyaya_ptica2022@mail.ru
+                            </span>
+                        </a>
+                    </li>
                 </ul>
                 <div class="socials">
                     <p class="social-text">Мы в соцсетях:</p>

@@ -76,7 +76,8 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 40px;
+    column-gap: 30px;
+    row-gap: 10px;
     list-style: none;
     font-weight: 300;
     font-size: 16px;
@@ -192,7 +193,7 @@ h2 {
 
 .hero-title {
     max-width: 525px;
-    font-size: 85px;
+    font-size: 90px;
     
 }
 
@@ -298,6 +299,7 @@ h2 {
     background-repeat: repeat;
     color: #1C69E2;
     min-height: calc(100vh - 305px);
+    padding: 10px 20px;
 }
 
 .docs-list {
@@ -308,11 +310,12 @@ h2 {
 .section-organization {
     background-image: url("./assets/images/bg.png");
     background-repeat: repeat;
-    padding: 0 20px;
+    padding: 10px 20px;
     color: #1C69E2;
 }
 
 .org-description {
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -320,7 +323,7 @@ table,
 td {
     border: 1px solid #1C69E2;
     border-collapse: collapse;
-    padding: 10px 30px;
+    padding: 10px 20px;
     vertical-align: middle;
 }
 
@@ -339,7 +342,7 @@ td {
 .section-schedule {
     background-image: url("./assets/images/bg.png");
     background-repeat: repeat;
-    padding: 0 20px;
+    padding: 10px 20px;
     color: #1C69E2;
     min-height: calc(100vh - 305px);
 }
@@ -361,10 +364,16 @@ td {
 .footer-container {
     margin-top: 10px;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: flex-end;
     gap: 20px;
+}
+
+.copyright {
+    order: 4;
+    width: 100%;
+    text-align: center;
 }
 
 .footer-navigation {
@@ -422,7 +431,6 @@ td {
     .header-contacts-list {
         flex-wrap: wrap;
         justify-content: space-around;
-        gap: 20px;
     }
 
     .contacts-list-item {
@@ -450,7 +458,7 @@ td {
         font-size: 48px;
     }
 
-    section {
+    .section {
         padding: 30px 0 30px 0;
     }
 
@@ -596,6 +604,11 @@ td {
 
 @media (max-width: 960px) {
 
+    .header-contacts-list {
+        justify-content: flex-start;
+        column-gap: 30px;
+    }
+
     .section-hero {
         background-position: 98% 50%, 100%;
         background-size: 400px, cover;
@@ -604,9 +617,14 @@ td {
     }
 
     .hero-text {
-        padding-top: 40px;
+        padding-top: 50px;
         font-size: 46px;
         max-width: 475px;
+    }
+
+    .about-us {
+        font-size: 38px;
+        line-height: 50px;
     }
 }
 
@@ -620,13 +638,14 @@ td {
     }
 
     .hero-title {
-        font-size: 78px;
-        line-height: 70px;
+        font-size: 80px;
+        line-height: 90px;
     }
 
     .hero-text {
-        padding-top: 30px;
-        font-size: 40px;
+        padding-top: 35px;
+        font-size: 45px;
+        line-height: 60px;
     }
 
     .section {
@@ -634,7 +653,7 @@ td {
     }
 
     .about-us {
-        font-size: 34px;
+        font-size: 32px;
     }
 
     table, 
@@ -662,27 +681,23 @@ td {
 @media (max-width: 720px) {
 
     .header-container {
-        height: 230px;
+        height: 200px;
     }
 
     .section-hero {
         background-size: 290px, cover;
-        background-position: 98% 10%, 100%;
+        background-position: 98% 10%, 60%;
     }
 
     .hero-text {
-        padding-top: 20px;
-        font-size: 38px;
-        line-height: 40px;
-        max-width: 355px;
+        padding-top: 30px;
+        font-size: 42px;
+        line-height: 55px;
+        max-width: 390px;
     }
 
     .hero-title {
-        font-size: 70px;
-    }
-
-    .about-us {
-        font-size: 32px;
+        font-size: 75px;
     }
 
 }
@@ -691,6 +706,12 @@ td {
 
     .nav {
         border-radius: 0 0 0 0;
+    }
+
+    .hero-text {
+        max-width: 355px;
+        line-height: 50px;
+        font-size: 40px;
     }
 
 }
@@ -707,11 +728,12 @@ td {
 
     .section-hero {
         background-size: 230px, cover;
-        background-position: 98% 6%, 100%;
+        background-position: 98% 6%, 50%;
     }
         
     .about-us {
         font-size: 30px;
+        line-height: 45px;
     }
 
 }
@@ -739,20 +761,25 @@ td {
 @media (max-width: 470px) {
 
     .header-container {
-        height: 320px;
+        height: 250px;
     }
 
     .header-contacts-list {
         flex-direction: column;
-        align-items: center;
     }
 
     .section-hero {
         background-size: 160px, cover;
     }
 
+    .hero-title {
+        line-height: 80px;
+        font-size: 70px;
+    }
+
     .about-us {
         font-size: 28px;
+        line-height: 42px;
     }
 
     .org-table {
@@ -761,10 +788,10 @@ td {
 
 }
 
-@media (max-width: 370px) {
+@media (max-width: 380px) {
 
     .header-container {
-        height: 330px;
+        height: 290px;
     }
 
     .section-hero {
@@ -773,18 +800,18 @@ td {
     }
 
     .hero-title {
-        font-size: 54px;
+        font-size: 60px;
+        line-height: 60px;
     }
 
     .hero-text {
-        font-size: 38px;
-        padding-top: 0;
-        max-width: 355px;
+        padding-top: 20px;
+        font-size: 40px;
+        line-height: 46px;
     }
 
     .about-us {
         font-size: 24px;
-        line-height: 48px;
     }    
 
     .footer-container {
@@ -797,7 +824,20 @@ td {
 
     .section-hero {
         background-size: 0px, cover;
+        padding-left: 10px;
     }
+
+    .hero-title {
+        font-size: 58px;
+        line-height: 60px;
+    }
+
+    .hero-text {
+        padding-top: 10px;
+        font-size: 38px;
+        line-height: 46px;
+    }
+
 
     .bird {
         display: block;
