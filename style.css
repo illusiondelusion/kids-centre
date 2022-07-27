@@ -214,7 +214,52 @@ h2 {
     color: #ffffff;
     font-size: 1.8rem;
     line-height: 2.5rem;
+    padding: 0 20px 30px 20px;
+}
+
+.slider {
     padding: 0 30px;
+    min-width: 0;
+    position: relative;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 20px;
+}
+
+.slider-img {
+    height: 400px;
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 46%;
+    z-index: 2;
+    font-size: 0;
+    width: 20px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url("./assets/svg/arrow-prev.svg") no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+    right: 0;
+    background: url("./assets/svg/arrow-next.svg") no-repeat;
+}
+
+.slider .slick-arrow.slick-disabled {
+    opacity: 0.4;
 }
 
 .section-services {
@@ -448,6 +493,10 @@ td {
         width: 350px;
     }
 
+    .slider-img {
+        height: 300px;
+    }
+
     .footer-container {
         justify-content: space-between;
         padding: 0 30px;
@@ -571,6 +620,10 @@ td {
         width: 310px;
     }
 
+    .slider-img {
+        height: 250px;
+    }
+
     .header-contacts-list {
         max-width: 700px;
         column-gap: 30px;
@@ -644,6 +697,10 @@ td {
         display: none;
     }
 
+    .slider-img {
+        height: 220px;
+    }
+
 }
 
 @media (max-width: 590px) {
@@ -671,7 +728,7 @@ td {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 590px) {
 
     .header-container {
         height: 160px;
@@ -723,5 +780,12 @@ td {
         font-size: 12px;
     }
 
+}
+
+@media (max-width: 380px) {
+
+    .slider-img {
+        height: 200px;
+    }
 }
 
