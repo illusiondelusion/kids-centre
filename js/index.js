@@ -18,9 +18,8 @@ $(document).ready(function() {
     slidesToShow: 3,
     speed: 600,
     infinite: true,
-    touchTreshold: 10,
+    touchTreshold: 15,
     variableWidth: true,
-    centerMode: true,
     responsive: [
       {
         breakpoint: 1090,
