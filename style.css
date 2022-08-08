@@ -857,3 +857,17 @@ td {
     }
 }
 
+@media (orientation: landscape) and (max-width: 860px) {
+
+    .section-promo {
+    height: calc(100% - 155px);
+    }
+
+}
+
+@media (orientation: landscape) and (max-width: 630px) {
+
+    .section-promo {
+    height: calc(100% - 130px);
+    }
+}
