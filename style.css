@@ -60,16 +60,11 @@ h3 {
     height: inherit;
 }
 
-.header-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 135px;
-    padding: 0 30px;
-}
-
-.upper-header-container {
-    display: none;
+.header {
+    height: 95px;
+    background-image: url("./assets/images/hero-bg-large.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hamburger {
@@ -78,7 +73,6 @@ h3 {
 
 .header-contacts-list {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     column-gap: 30px;
     list-style: none;
@@ -122,35 +116,37 @@ h3 {
     background-image: url("./assets/svg/msg.svg");
 }
 
-.nav-container {
+.header__container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
 }
 
-.nav-list {
+.logo {
+    background-image: url("./assets/svg/logo.svg");
+    width: 85px;
+    height: 85px;
+}
+
+.nav__list {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     padding: 0 4px 0 0;
-    gap: 5px;
     list-style: none;
     text-transform: uppercase;
     white-space: nowrap;
-    font-size: 1.2rem;
+    font-size: 24px;
 }
 
-.nav-list-item {
-    border-right: 1px solid #da89b4;
-    padding: 2px 10px 4px 10px;
+.list__item {
+    border-right: 1px solid #ffddef;
+    padding: 10px;
 }
 
-.nav-list-item:nth-last-child(-n+1) {
+.list__item:nth-last-child(-n+1) {
     border-right: none;
 }
 
-.nav-link {
+.nav__link {
     transition: 0.4s;
     color: #ffffff;
 }
