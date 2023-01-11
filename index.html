@@ -26,7 +26,7 @@
                     <ul class="nav__list">
                         <li class="list__item"><a class="nav__link" href="/">Главная</a></li>
                         <li class="list__item"><a class="nav__link" href="index.html#about">О нас</a></li>
-                        <li class="list__item"><a class="nav__link" href="./news.html">Новости</a></li>
+                        <li class="list__item"><a class="nav__link" href="index.html#news">Новости</a></li>
                         <li class="list__item"><a class="nav__link" href="./organization.html">Организация</a></li>
                         <li class="list__item"><a class="nav__link" href="index.html#services">Услуги</a></li>
                         <li class="list__item"><a class="nav__link" href="./documents.html">Документы</a></li>
@@ -50,21 +50,21 @@
                 <p id="about" class="about__description">Мы предоставляем социальные услуги в сфере образования, культуры и просвещения, оказываем социальную поддержку и организуем досуг детей и подростков до 18 лет, испытывающих трудности в социальной адаптации.</p>
                 <h3 class="reviews__title">Отзывы родителей:</h3>
                 <div class="reviews__slider slider">
-                    <div class="slider__items">
-                        <div class="slider__item">
-                            <img class="slider__img" src="" alt="">
+                    <div class="review__items">
+                        <div class="review__item">
+                            <img class="review__img" src="" alt="">
                         </div>
-                        <div class="slider__item">
-                            <img class="slider__img" src="" alt="">
+                        <div class="review__item">
+                            <img class="review__img" src="" alt="">
                         </div>
-                        <div class="slider__item">
-                            <img class="slider__img" src="" alt="">
+                        <div class="review__item">
+                            <img class="review__img" src="" alt="">
                         </div>
-                        <div class="slider__item">
-                            <img class="slider__img" src="" alt="">
+                        <div class="review__item">
+                            <img class="review__img" src="" alt="">
                         </div>
-                        <div class="slider__item">
-                            <img class="slider-img" src="" alt="">
+                        <div class="review__item">
+                            <img class="review__img" src="" alt="">
                         </div>
                     </div>
                 </div>
@@ -73,26 +73,47 @@
                 </button>
             </div>
         </section>
-        <section class="section section-services">
+        <section class="section section__services">
             <div class="container">
-                <h2 id="services" class="h-centered">Виды оказываемых услуг</h2>
-                    <div class="services-items">
-                        <div class="service-item">
-                            <p class="service-item-title">Социально - психологические</p>
-                            <p class="service-item-text">Оказание помощи в коррекции психологического состояния для адаптации в социальной среде, в том числе оказание психологической помощи</p>
+                <h2 id="services" class="section__title">Виды оказываемых услуг</h2>
+                    <div class="services__items">
+                        <div class="service__item">
+                            <p class="service__title">Социально - психологические</p>
+                            <p class="service__text">Оказание помощи в коррекции психологического состояния для адаптации в социальной среде, в том числе оказание психологической помощи</p>
                         </div>
-                        <div class="service-item">
-                            <p class="service-item-title">Социально - педагогические</p>
-                            <p class="service-item-text">Профилактика отклонений в поведении и развитии личности, формирование позитивных интересов (в том числе в сфере досуга), организация досуга</p>
+                        <div class="service__item">
+                            <p class="service__title">Социально - педагогические</p>
+                            <p class="service__text">Профилактика отклонений в поведении и развитии личности, формирование позитивных интересов (в том числе в сфере досуга), организация досуга</p>
                         </div>
-                        <div class="service-item">
-                            <p class="service-item-title">Социально - правовые</p>
-                            <p class="service-item-text">Оказание помощи в получении юридических услуг, в том числе бесплатно, в защите прав и законных интересов</p>
+                        <div class="service__item">
+                            <p class="service__title">Социально - правовые</p>
+                            <p class="service__text">Оказание помощи в получении юридических услуг, в том числе бесплатно, в защите прав и законных интересов</p>
                         </div>
                     </div>
             </div>
         </section>
-        <section class="section section-contacts">
+        <section class="section section__news">
+            <div class="container">
+                <h2 id="news" class="section__title">Новости</h2>
+                <div class="news__slider slider">
+                    <button class="btn slider__btn">
+
+                    </button>
+                    <div class="news__items">
+                        <article class="news__item">
+                            <img src="./assets/photos/concert1.jpg" alt="Музыкальный концерт" class="news__img">
+                            <p class="news__date">20.07.2022</p>
+                            <h3 class="news__title">В ЦЕНТРЕ "СИНЯЯ ПТИЦА" ПРОШЕЛ МУЗЫКАЛЬНЫЙ КОНЦЕРТ</h3>
+                            <p class="news__description">Выступили ученики музыкальной школы №1 г. Волжского с преподавателем Двойниной Галиной Борисовной</p>
+                        </article>
+                    </div>
+                    <button class="btn slider__btn">
+
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="section section__contacts">
             <div class="container">
                 <h2 id="contacts" class="h-centered">Как нас найти</h2>
                     <div class="find-us">
@@ -144,8 +165,6 @@
             </div>
         </div>
     </footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="./js/slick.min.js"></script>
 <script src="./js/index.js"></script>
 </body>
 </html>
