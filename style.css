@@ -381,6 +381,56 @@ h3 {
     grid-area: 3 / 2 / 4 / 3;
 }
 
+.section__gallery {
+    background-color: #ffffff;
+    color: #1C69E2;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 430px);
+    grid-auto-rows: 10px;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.gallery__img {
+    border-radius: 16px;
+    width: 430px;
+    transition: 0.3s;
+}
+
+.gallery__img:hover {
+    transform: scale(1.1);
+}
+
+.gallery__item {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.gallery__item--h {
+    grid-row-end: span 10;
+}
+
+.gallery__item--v {
+    grid-row-end: span 17;
+}
+
+.btn__gallery {
+    border: 1px solid #1C69E2;
+}
+
+.btn__gallery:hover {
+    box-shadow: 1px 1px 4px #1C69E2;
+}
+
+.btn__link--blue {
+    color: #1C69E2;
+}
+
 .section__contacts {
     color: #1C69E2;
 }
