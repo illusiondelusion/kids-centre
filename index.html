@@ -19,18 +19,20 @@
     <header class="header">
         <div class="container">
             <div class="header__container">
-                <div class="logo">
+                <a href="/">
+                    <div class="logo">
 
-                </div>
+                    </div>
+                </a>
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="list__item"><a class="nav__link" href="/">Главная</a></li>
-                        <li class="list__item"><a class="nav__link" href="index.html#about">О нас</a></li>
-                        <li class="list__item"><a class="nav__link" href="index.html#news">Новости</a></li>
-                        <li class="list__item"><a class="nav__link" href="./organization.html">Организация</a></li>
-                        <li class="list__item"><a class="nav__link" href="index.html#services">Услуги</a></li>
-                        <li class="list__item"><a class="nav__link" href="./documents.html">Документы</a></li>
-                        <li class="list__item"><a class="nav__link" href="index.html#contacts">Контакты</a></li>
+                        <li class="nav__item"><a class="nav__link" href="/">Главная</a></li>
+                        <li class="nav__item"><a class="nav__link" href="index.html#about">О нас</a></li>
+                        <li class="nav__item"><a class="nav__link" href="index.html#news">Новости</a></li>
+                        <li class="nav__item"><a class="nav__link" href="./organization.html">Организация</a></li>
+                        <li class="nav__item"><a class="nav__link" href="index.html#services">Услуги</a></li>
+                        <li class="nav__item"><a class="nav__link" href="./documents.html">Документы</a></li>
+                        <li class="nav__item"><a class="nav__link" href="index.html#contacts">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -97,9 +99,22 @@
                 <h2 id="news" class="section__title">Новости</h2>
                 <div class="news__slider slider">
                     <button class="btn slider__btn">
-
+                        <svg class="icon__arrow">
+                            <use xlink:href="./assets/svg/sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
+                    <button class="btn slider__btn">
+                        <svg class="icon__arrow">
+                            <use xlink:href="./assets/svg/sprite.svg#arrow"></use>
+                        </svg>
                     </button>
                     <div class="news__items">
+                        <article class="news__item">
+                            <img src="./assets/photos/concert1.jpg" alt="Новый год" class="news__img">
+                            <p class="news__date">16.01.2023</p>
+                            <h3 class="news__title">НОВОГОДНЯЯ СКАЗКА</h3>
+                            <p class="news__description">23, 28 и 29 декабря в нашем центре прошли выступления младшей, средней и старшей группы. Посмотреть, как это было, можно по ссылке</p>
+                        </article>
                         <article class="news__item">
                             <img src="./assets/photos/concert1.jpg" alt="Музыкальный концерт" class="news__img">
                             <p class="news__date">20.07.2022</p>
@@ -107,9 +122,6 @@
                             <p class="news__description">Выступили ученики музыкальной школы №1 г. Волжского с преподавателем Двойниной Галиной Борисовной</p>
                         </article>
                     </div>
-                    <button class="btn slider__btn">
-
-                    </button>
                 </div>
             </div>
         </section>
@@ -145,46 +157,67 @@
         </section>
         <section class="section section__contacts">
             <div class="container">
-                <h2 id="contacts" class="h-centered">Как нас найти</h2>
-                    <div class="find-us">
-                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.4881266657508!2d44.75734521567206!3d48.791661779281085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41054cec1fd6d0e9%3A0x6cee21f6a5b878a4!2z0YPQuy4g0LjQvNC10L3QuCDQs9C10L3QtdGA0LDQu9CwINCa0LDRgNCx0YvRiNC10LLQsCwgMjgsINCS0L7Qu9C20YHQutC40LksINCS0L7Qu9Cz0L7Qs9GA0LDQtNGB0LrQsNGPINC-0LHQuy4sIDQwNDExMQ!5e0!3m2!1sru!2sru!4v1647582297829!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
-                        <img class="building-photo" src="./assets/images/sinyaya-ptitsa-building.jpg" alt="Синяя Птица">
+                <h2 id="contacts" class="section__title">Контакты</h2>
+                    <div class="contacts__container">
+                        <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aadc07d14c1cbc75041d53b37625a684d7c85ca060bf6ed87c07305ea9a0b977c&amp;source=constructor" frameborder="0"></iframe>
+
+                        <ul class="contacts__list">
+                            <li class="contacts__item">Мы находимся по адресу:</li>
+                            <li class="contacts__item contacts__item--address" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                <span itemprop="addressLocality">г.Волжский</span>,
+                                <span itemprop="streetAddress">ул. им. Генерала Карбышева, 28</span>
+                            </li>
+                            <li class="contacts__item">Время работы:</li>
+                            <li class="contacts__item contacts__item--time" itemscope itemtype="https://schema.org/LocalBusiness">
+                                <time itemprop="openingHours" datetime="Mo-Fr 14:00-20:00">
+                                    Пн. - Пт. 14:00-20:00
+                                </time>
+                            </li>
+                            <li class="contacts__item">Связаться с нами:</li>
+                            <li class="contacts__item contacts__item--tel">
+                                <a class="tel__link" href="tel:+79053956822">
+                                    <span itemprop="telephone">+7 (905) 395-68-22</span>
+                                </a>
+                                <a class="tel__link" href="tel:+79093816787">
+                                    <span itemprop="telephone">+7 (909) 381-67-87</span>
+                                </a>
+                            </li>
+                            <li class="contacts__item contacts__item--mail">
+                                <a href="mailto:sinyaya_ptica2022@mail.ru">
+                                    <span itemprop="email">
+                                        sinyaya_ptica2022@mail.ru
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <img class="building__photo" src="./assets/images/sinyaya-ptitsa-building.jpg" alt="Синяя Птица, вход">
                     </div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer-container" itemscope itemtype="https://schema.org/Organization">
+            <div class="footer__container" itemscope itemtype="https://schema.org/Organization">
                 <div class="copyright">
                     © 2022 ВРАНО <span itemprop="name">"Центр социальной поддержки и развития детей "Синяя птица"</span>
                 </div>
-                <ul class="footer-navigation">
+                <ul class="footer__navigation">
                     <li><a href="./news.html">Новости</a></li>
+                    <li><a href="./gallery.html">Галерея</a></li>
                     <li><a href="./organization.html">Сведения об организации</a></li>
-                    <li><a href="./schedule.html">Расписание</a></li>
                     <li><a href="./documents.html">Документы</a></li>
                     <li><a href="index.html#contacts">Контакты</a></li>
                 </ul>
-                <ul class="footer-contacts-list">
-                    <li class="contacts-list-item footer-contacts" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                        <span itemprop="addressLocality">г.Волжский</span>,
-                        <span itemprop="streetAddress">ул. им. Карбышева, 28</span>
-                    </li>
-                    <li class="contacts-list-item footer-contacts">
-                        <a class="contacts-list-item-tel" href="tel:+79053956822">
+                <ul class="footer-contacts__list">
+                    <li class="contacts__item contacts__item--tel">
+                        <a class="tel__link" href="tel:+79053956822">
                             <span itemprop="telephone">+7 (905) 395-68-22</span>
                         </a>
-                        <a class="contacts-list-item-tel" href="tel:+79093816787">
+                        <a class="tel__link" href="tel:+79093816787">
                             <span itemprop="telephone">+7 (909) 381-67-87</span>
                         </a>
                     </li>
-                    <li class="contacts-list-item footer-contacts" itemscope itemtype="https://schema.org/LocalBusiness">
-                        <time itemprop="openingHours" datetime="Mo-Fr 14:00-20:00">
-                            Пн. - Пт. 14:00-20:00
-                        </time>
-                    </li>
-                    <li class="contacts-list-item footer-contacts">
+                    <li class="contacts__item contacts__item--mail">
                         <a href="mailto:sinyaya_ptica2022@mail.ru">
                             <span itemprop="email">
                                 sinyaya_ptica2022@mail.ru
@@ -195,6 +228,8 @@
             </div>
         </div>
     </footer>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="./js/slick.min.js"></script>
 <script src="./js/index.js"></script>
 </body>
 </html>

@@ -14,25 +14,11 @@ nav.addEventListener('click', function(event) {
   });
 
 $(document).ready(function() {
-  $('.slider').slick({
-    slidesToShow: 3,
+  $('.slydir').slick({
+    slidesToShow: 1,
     speed: 600,
-    infinite: true,
+    infinite: false,
     touchTreshold: 15,
-    variableWidth: true,
-    responsive: [
-      {
-        breakpoint: 1090,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 630,
-        settings: {
-          slidesToShow: 1,
-        }
-      }
-    ]
+    variableWidth: false,
   });
 });
