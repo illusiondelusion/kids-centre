@@ -3,13 +3,13 @@ const nav = document.querySelector('.nav')
 
 hamburger.addEventListener('click', function() {
     this.classList.toggle('is-active');
-    nav.classList.toggle('nav-open');
+    nav.classList.toggle('nav__open');
   });
 
 nav.addEventListener('click', function(event) {
       if (event.target.classList.contains('nav__link')) {
         hamburger.classList.remove('is-active');
-        nav.classList.remove('nav-open');
+        nav.classList.remove('nav__open');
       }
   });
 

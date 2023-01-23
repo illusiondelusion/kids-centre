@@ -95,7 +95,7 @@ h3 {
     background-image: url("./assets/images/hero-bg-large.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
+    background-attachment: fixed;
 }
 
 .hamburger {
@@ -132,7 +132,6 @@ h3 {
 .nav__link {
     display: block;
     font-family: 'Isabella Sans', sans-serif;
-    transition: 0.4s;
     color: #ffffff;
 	transition: 0.35s;
 }
@@ -154,8 +153,8 @@ h3 {
     background-color: #1C69E2;
     background-image: url("./assets/images/hero-bg-large.png");
     background-repeat: no-repeat;
-    background-position: center -100px;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .promo__info {
@@ -344,7 +343,7 @@ h3 {
 
 .btn--next {
     position: absolute;
-    right: 1px;
+    right: 10px;
 }
 
 .news__items {
@@ -357,7 +356,7 @@ h3 {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 10% 20% 1fr;
+    grid-template-rows: 10% 15% 1fr;
     animation: appear 1s;
 }
 
@@ -382,7 +381,6 @@ h3 {
     font-size: 24px;
     color: #ffffff;
     grid-area: 3 / 2 / 4 / 3;
-    justify-content: flex-start;
 }
 
 .section__gallery {
@@ -452,7 +450,7 @@ h3 {
 }
 
 .map__frame {
-    width: 100%;
+    width: 600px;
     height: 620px;
     grid-area: 1 / 1 / 3 / 2;
     justify-self: end;
@@ -607,95 +605,52 @@ td {
 }
 
 
-@media (max-width: 1280px) {
+@media (max-width: 1480px) {
+    .container {
+        padding: 0 20px;
+    }
+}
 
-    .header-contacts-list {
-        flex-wrap: wrap;
+@media (max-width: 1200px) {
+
+    a {
+        font-size: 20px;
     }
 
-    .contacts-list-item {
-        margin-left: 20px;
-        font-size: 0.9rem;
-    }
-
-    .nav-list {
-        padding: 0 5px 0 0;
-        font-size: 1.1rem;
-    }
-
-    .hero-text {
-        padding-top: 100px;
+    h2 {
         font-size: 48px;
+        line-height: 58px;
     }
 
-    .promo-container {
-        padding: 40px 50px 0 60px;
+    .section {
+        padding: 30px 0 40px 0;
     }
 
-    .promo-pic {
-        width: 400px;
+    .about__description {
+        font-size: 32px;
+        line-height: 40px;
+        padding-bottom: 30px;
     }
 
-    .map {
-        width: 100%;
+    .promo__info {
+        padding-top: 120px;
     }
 
+    .section__title {
+        font-size: 58px;
+    }
+
+    .service__title {
+        font-size: 28px;
+    }
 }
 
-@media (max-width: 1090px) {
-
-    .header-container {
-        height: 155px;
-    }
-
-    .bird-pages {
-        margin-top: 8px;
-        width: 85px;
-        background-image: url("./assets/images/logo-brighter.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-    .promo-text {
-        font-size: 3.6rem;
-        line-height: 4.8rem;
-    }
-
-    .promo-title {
-        font-size: 6.7rem;
-    }
-
-    .promo-pic {
-        width: 350px;
-    }
-
-    .slider-img {
-        height: 300px;
-    }
-
-    .footer-container {
-        justify-content: space-between;
-        padding: 0 30px;
-    }
-
-}
-
-@media (max-width: 970px) {
+@media (max-width: 1060px) {
 
     html,
     body {
         position: relative;
         overflow-x: hidden;
-    }
-
-    .upper-header-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .header-container {
-        row-gap: 0;
     }
 
     .hamburger {
@@ -720,7 +675,7 @@ td {
     }
 
     .hamburger:hover .line {
-        background-color: #da89b4;
+        background-color: #ffffff;
     }
 
     .hamburger.is-active .line:nth-child(2) {
@@ -747,96 +702,74 @@ td {
         right: -620px;
         background-color: rgba(28, 104, 226, 0.9);
         border: 1px solid rgba(19, 69, 150, 0.8);
-        border-radius: 20px 0 0 20px;
-        height: 100vh;
+        height: 1090px;
     }
 
-    .nav-open {
+    .nav__open {
         visibility: visible;
         opacity: 100%;
         position: absolute;
         z-index: 1;
-        width: 620px;
-        right: 0;
+        width: 100%;
+        right: 0px;
         top: 0;
         transition: all 0.6s;
     }
 
-    .nav-list {
+    .nav__list {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        padding: 65px 0 20px 50px;
-        gap: 35px;
+        padding: 65px 0 20px 60px;
+        gap: 20px;
     }
 
-    .nav-list-item {
-        border-right: 0;
+    .nav__link {
+        font-size: 32px;
     }
 
-    .nav-link {
-        font-size: 2.2rem;
-    }
 
-    .section-promo {
-        height: 620px;
-    }
-
-    .promo-text {
-        font-size: 3.1rem;
-        line-height: 4rem;
-    }
-
-    .promo-title {
-        font-size: 6rem;
-        line-height: 7rem;
-    }
-
-    .promo-pic {
-        width: 310px;
-    }
-
-    .slider-img {
-        height: 250px;
-    }
-
-    .header-contacts-list {
-        max-width: 700px;
-        column-gap: 30px;
-    }
-}
-
-@media (max-width: 860px) {
-
-    .logo {
-        display: block;
-        margin-top: 8px;
-        width: 85px;
-        background-image: url("./assets/images/logo-brighter.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-    .section-promo {
-        height: calc(100vh - 155px);
-    }
-
-    .promo-info {
-        display: flex;
-        flex-direction: column;
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 330px);
+        grid-auto-rows: 10px;
         justify-content: center;
+        gap: 15px;
+        margin: 30px 0;
     }
 
-    .promo-container {
-        padding: 30px 10px 0 30px;
+    .gallery__img {
+        width: 330px;
     }
 
-    .promo-text {
-        max-width: 100%;
+    .gallery__item--v {
+        grid-row-end: span 16;
     }
 
-    .promo-pic {
-        display: none;
+    .gallery__item--h {
+        grid-row-end: span 10;
+    }
+
+    .contacts__container {
+        margin-top: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .map__frame {
+        width: 100%;
+        height: 430px;
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .contacts__list {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .building__photo {
+        width: 300px;
+        grid-area: 2 / 2 / 3 / 3;
+        justify-self: end;
     }
 }
 
@@ -854,33 +787,13 @@ td {
     .org-table {
         font-size: 16px;
     }
-
-    .h-centered {
-        font-size: 4rem;
-    }
 }
 
 @media (max-width: 630px) {
 
-    .header-container {
-        height: 130px;
-    }
-
-    .section-promo {
-        height: calc(100vh - 130px);
-        background-position: 40%;
-    }
-
-    .nav {
-        border-radius: 0 0 0 0;
-    }
-
-    .item-hidden {
-        display: none;
-    }
-
-    .slider-img {
-        height: 220px;
+    .footer__container {
+        justify-content: flex-start;
+        margin-left: 20px;
     }
 
 }
