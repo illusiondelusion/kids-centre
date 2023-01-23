@@ -35,6 +35,11 @@
                         <li class="nav__item"><a class="nav__link" href="index.html#contacts">Контакты</a></li>
                     </ul>
                 </nav>
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
             </div>
         </div>
     </header>
@@ -98,28 +103,40 @@
             <div class="container">
                 <h2 id="news" class="section__title">Новости</h2>
                 <div class="news__slider slider">
-                    <button class="btn slider__btn">
+                    <button class="btn slider__btn btn--prev">
                         <svg class="icon__arrow">
                             <use xlink:href="./assets/svg/sprite.svg#arrow"></use>
                         </svg>
                     </button>
-                    <button class="btn slider__btn">
+                    <button class="btn slider__btn  btn--next">
                         <svg class="icon__arrow">
                             <use xlink:href="./assets/svg/sprite.svg#arrow"></use>
                         </svg>
                     </button>
                     <div class="news__items">
                         <article class="news__item">
-                            <img src="./assets/photos/concert1.jpg" alt="Новый год" class="news__img">
+                            <img src="./assets/photos/new_year1.jpg" alt="Новый год" class="news__img">
                             <p class="news__date">16.01.2023</p>
                             <h3 class="news__title">НОВОГОДНЯЯ СКАЗКА</h3>
-                            <p class="news__description">23, 28 и 29 декабря в нашем центре прошли выступления младшей, средней и старшей группы. Посмотреть, как это было, можно по ссылке</p>
+                            <p class="news__description">23, 28 и 29 декабря в нашем Центре проходила постановка "Щелкунчик" с участием младшей, средней и старшей группы. Детей посетил Дед Мороз и подарил новогодние подарки</p>
+                        </article>
+                        <article class="news__item">
+                            <img src="./assets/photos/mothers_day1.jpg" alt="День матери" class="news__img">
+                            <p class="news__date">28.11.2023</p>
+                            <h3 class="news__title">День матери</h3>
+                            <p class="news__description">Во всех группах прошли открытые уроки, посвященные Дню Матери</p>
+                        </article>
+                        <article class="news__item">
+                            <img src="./assets/photos/1sept3.jpg" alt="1 сентября" class="news__img">
+                            <p class="news__date">01.09.2022</p>
+                            <h3 class="news__title">День знаний</h3>
+                            <p class="news__description">У нас в Центре прошел праздник, посвященный дню знаний. Первоклассники поучаствовали в мастер-классе "Меловая доска"</p>
                         </article>
                         <article class="news__item">
                             <img src="./assets/photos/concert1.jpg" alt="Музыкальный концерт" class="news__img">
                             <p class="news__date">20.07.2022</p>
-                            <h3 class="news__title">В ЦЕНТРЕ "СИНЯЯ ПТИЦА" ПРОШЕЛ МУЗЫКАЛЬНЫЙ КОНЦЕРТ</h3>
-                            <p class="news__description">Выступили ученики музыкальной школы №1 г. Волжского с преподавателем Двойниной Галиной Борисовной</p>
+                            <h3 class="news__title">МУЗЫКАЛЬНЫЙ КОНЦЕРТ</h3>
+                            <p class="news__description">В нашем Центре выступили ученики музыкальной школы №1 г. Волжского с преподавателем Двойниной Галиной Борисовной</p>
                         </article>
                     </div>
                 </div>
@@ -153,7 +170,7 @@
                     <img src="./assets/photos/13.jpg" alt="" class="gallery__img">
                 </figure>
             </div>
-            <button class="btn btn--main btn__gallery"><a href="./gallery.html" class="btn__link btn__link--blue">все фото ⟶</a></button>
+            <button class="btn btn--main btn--gallery"><a href="./gallery.html" class="btn__link btn__link--blue">все фото ⟶</a></button>
         </section>
         <section class="section section__contacts">
             <div class="container">
