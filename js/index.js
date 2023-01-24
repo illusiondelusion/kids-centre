@@ -50,4 +50,7 @@ showSlides(slideIndex);
 const promoText = document.querySelector(".promo__text");
 if (document.documentElement.clientWidth <= 800) {
   promoText.textContent = "ВРАНО \"Центр социальной поддержки и развития детей";
+} else if (document.documentElement.clientWidth > 800) {
+  promoText.textContent = "Волгоградская Региональная Автономная Некоммерческая Организация \"Центр социальной поддержки и развития детей";
 }
+

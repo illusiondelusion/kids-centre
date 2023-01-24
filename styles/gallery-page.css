@@ -93,6 +93,9 @@ h3 {
     transition: 0.3s;
     background-color: transparent;
     cursor: pointer;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #6291dd;
+    font-size: 22px;
 }
 
 .gallery__sections {
