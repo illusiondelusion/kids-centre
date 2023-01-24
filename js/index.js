@@ -13,9 +13,9 @@ nav.addEventListener('click', function(event) {
       }
   });
 
-let slides = document.querySelectorAll(".news__item");
-let btnPrev = document.querySelector(".btn--prev");
-let btnNext = document.querySelector(".btn--next");
+const slides = document.querySelectorAll(".news__item");
+const btnPrev = document.querySelector(".btn--prev");
+const btnNext = document.querySelector(".btn--next");
 
 let slideIndex = 1;
 
@@ -46,3 +46,8 @@ function showSlides(n) {
 }
 
 showSlides(slideIndex);
+
+const promoText = document.querySelector(".promo__text");
+if (document.documentElement.clientWidth <= 800) {
+  promoText.textContent = "ВРАНО \"Центр социальной поддержки и развития детей";
+}
