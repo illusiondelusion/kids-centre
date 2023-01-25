@@ -39,7 +39,7 @@ a {
 }
 
 a:hover {
-    color: #D04861;
+    color: #be6494;
 }
 
 h1 {
@@ -496,52 +496,7 @@ h3 {
     grid-area: 2 / 2 / 3 / 3;
 }
 
-.section-documents {
-    color: #1C69E2;
-    min-height: calc(100vh - 305px);
-    padding: 10px 20px;
-}
 
-.docs-list {
-    list-style: none;
-    padding: 10px 20px;
-}
-
-.section-organization {
-    padding: 10px 20px;
-    color: #1C69E2;
-}
-
-.org-description {
-    padding: 10px 0;
-    text-align: center;
-}
-
-table,
-td {
-    border: 1px solid #1C69E2;
-    border-collapse: collapse;
-    padding: 10px 20px;
-    vertical-align: middle;
-}
-
-.bold {
-    font-weight: 500;
-}
-
-.org-table {
-    margin: 0 auto;
-}
-
-.ph-list-items {
-    margin-left: 20px;
-}
-
-.section-schedule {
-    padding: 10px 20px;
-    color: #1C69E2;
-    min-height: calc(100vh - 305px);
-}
 
 .footer {
     background-color: #1C69E2;
