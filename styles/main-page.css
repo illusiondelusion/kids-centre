@@ -753,7 +753,6 @@ h3 {
     }
 
     .btn {
-        min-width: 25px;
         padding: 0;
     }
 
@@ -761,17 +760,20 @@ h3 {
         padding: 10px;
     }
 
-    .slider__btn {
-        width: 25px;
-        height: 25px;
-    }
-
-    .icon__arrow {
-        width: 5px;
-    }
-
     .news__slider {
         padding: 0;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 10px;
+    }
+
+    .btn--prev {
+        order: 2;
+    }
+
+    .btn--next {
+        order: 3;
     }
 
     .news__item {
@@ -928,6 +930,20 @@ h3 {
     .promo-text {
         font-size: 2.9rem;
         line-height: 3.2rem;
+    }
+
+    .btn {
+        min-width: 40px;
+    }
+
+    .slider__btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon__arrow {
+        width: 9px;
+        height: 19px;
     }
 }
 
