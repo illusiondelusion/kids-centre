@@ -101,6 +101,19 @@ h3 {
     display: grid;
 }
 
+.teacher__photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.teacher__photo img {
+    display: block;
+    width: 100%;
+    transform: translateY(-15px);
+}
+
 @media (max-width: 1480px) {
 
     .container {
