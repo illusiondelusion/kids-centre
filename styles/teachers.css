@@ -98,7 +98,21 @@ h3 {
 }
 
 .teachers__container {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 25px;
+    column-gap: 15px;
+    margin-top: 40px;
+}
+
+.teacher__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    flex-basis: 400px;
+    text-align: center;
 }
 
 .teacher__photo {
@@ -112,6 +126,14 @@ h3 {
     display: block;
     width: 100%;
     transform: translateY(-15px);
+}
+
+.teacher__name {
+    font-size: 28px;
+}
+
+.teacher__card:nth-child(1) {
+    flex-basis: 100%;
 }
 
 @media (max-width: 1480px) {
@@ -237,8 +259,11 @@ h3 {
 
 }
 
-@media (max-width: 740px) {
+@media (max-width: 875px) {
 
+    .teachers__container {
+        justify-content: center;
+    }
 
 }
 
