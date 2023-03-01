@@ -901,36 +901,33 @@ h3 {
         line-height: 49px;
     }
 
+    .gallery {
+        grid-template-columns: repeat(auto-fill, 210px);
+    }
+
+    .gallery__item {
+        width: 210px;
+    }
+
+    .gallery__img {
+        width: 210px;
+    }
+
+    .gallery__item--h {
+        grid-row-end: span 7;
+    }
+
+    .gallery__item--v {
+        grid-row-end: span 12;
+    }
+
     .footer__container {
         justify-content: flex-start;
-        margin-left: 20px;
     }
 
 }
 
 @media (max-width: 590px) {
-
-    .nav-list {
-        padding: 65px 0 20px 40px;
-        gap: 10px;
-    }
-
-    .nav-link {
-        font-size: 1.4rem;
-    }
-
-    .nav-open {
-        width: 100%;
-    }
-
-    .promo-container {
-        padding: 10px 10px 0 30px;
-    }
-
-    .promo-text {
-        font-size: 2.9rem;
-        line-height: 3.2rem;
-    }
 
     .btn {
         min-width: 40px;

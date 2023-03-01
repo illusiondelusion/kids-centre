@@ -261,6 +261,19 @@ h3 {
 
 @media (max-width: 875px) {
 
+    h2 {
+        font-size: 45px;
+        line-height: 52px;
+    }
+
+    .section {
+        padding: 20px 0 30px 0;
+    }
+
+    .section__title {
+        font-size: 48px;
+    }
+
     .teachers__container {
         justify-content: center;
     }
@@ -269,12 +282,31 @@ h3 {
 
 @media (max-width: 620px) {
 
-    .btn {
-        padding: 8px;
+    h2 {
+        font-size: 39px;
+        line-height: 49px;
     }
 
     .footer__container {
         justify-content: flex-start;
     }
 
+}
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 20px;
+    }
+
+    .section__title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .section__title {
+        font-size: 32px;
+    }
 }
