@@ -1,5 +1,7 @@
-const hamburger = document.querySelector('.hamburger')
-const nav = document.querySelector('.nav')
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.nav');
+const navBtn = document.querySelector('.nav__btn');
+const drop = document.querySelector('.dropdown');
 
 hamburger.addEventListener('click', function() {
     this.classList.toggle('is-active');
@@ -10,8 +12,23 @@ nav.addEventListener('click', function(event) {
       if (event.target.classList.contains('nav__link')) {
         hamburger.classList.remove('is-active');
         nav.classList.remove('nav__open');
+
+        if (event.target.classList.contains('dropdown__link')) {
+          drop.classList.remove('dropdown--active');
+        }
       }
   });
+
+navBtn.addEventListener('click', function() {
+      drop.classList.toggle('dropdown--active');
+});
+
+document.body.addEventListener('click', function(event) {
+      if (!event.target.classList.contains('nav') && !event.target.closest('nav')) {
+        drop.classList.remove('dropdown--active');
+      }
+});
+
 
 const slides = document.querySelectorAll(".news__item");
 const btnPrev = document.querySelector(".btn--prev");
