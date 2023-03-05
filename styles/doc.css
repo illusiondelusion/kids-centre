@@ -93,9 +93,16 @@ h3 {
     min-height: 500px;
 }
 
-.docs-list {
+.docs__list {
     list-style: none;
-    padding: 10px 20px;
+    padding: 10px 0;
+}
+
+@media (max-width: 1480px) {
+
+    .container {
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -113,23 +120,10 @@ h3 {
         padding: 30px 0 40px 0;
     }
 
-    .about__description {
-        font-size: 32px;
-        line-height: 40px;
-        padding-bottom: 30px;
-    }
-
-    .promo__info {
-        padding-top: 120px;
-    }
-
     .section__title {
         font-size: 58px;
     }
 
-    .service__title {
-        font-size: 28px;
-    }
 }
 
 @media (max-width: 900px) {
@@ -234,59 +228,8 @@ h3 {
     }
 }
 
-@media (max-width: 780px) {
-
-    table,
-    td {
-    padding: 8px 10px;
-    }
-
-    .org-table {
-        font-size: 16px;
-    }
-
-    .btn {
-        min-width: 25px;
-        padding: 0;
-    }
-
-    .btn__link {
-        padding: 10px;
-    }
-
-    .slider__btn {
-        width: 25px;
-        height: 25px;
-    }
-
-    .icon__arrow {
-        width: 5px;
-    }
-
-    .news__slider {
-        padding: 0;
-    }
-
-    .news__item {
-        padding: 0 5px;
-    }
-
-    .news__title {
-        font-size: 22px;
-    }
-
-    .news__description {
-        font-size: 20px;
-        line-height: 25px;
-    }
-
-    .news__img {
-        display: block;
-        width: 100%;
-    }
-}
-
 @media (max-width: 745px) {
+
     h1 {
         font-size: 75px;
         line-height: 90px;
@@ -298,85 +241,23 @@ h3 {
     }
 
     .logo {
-        background-size: 65px 65px;
-        width: 65px;
-        height: 65px;
+        background-size: 55px 55px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .nav__list {
+        padding: 65px 0 20px 30px;
     }
 
     .section {
         padding: 20px 0 30px 0;
     }
 
-    .about__description {
-        font-size: 28px;
-        line-height: 35px;
-        padding-bottom: 20px;
-    }
-
     .section__title {
         font-size: 48px;
     }
 
-    .services__items {
-        margin-top: 30px;
-        padding-bottom: 20px;
-        gap: 55px;
-    }
-
-    .service__title {
-        font-size: 26px;
-    }
-
-    .service__text {
-        padding-top: 10px;
-        font-size: 20px;
-        line-height: 25px;
-    }
-
-    .btn__link {
-        font-size: 28px;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(auto-fill, 280px);
-        grid-auto-rows: 10px;
-        gap: 15px;
-        margin: 20px 0;
-    }
-
-    .gallery__img {
-        width: 280px;
-    }
-
-    .gallery__item {
-        width: 280px;
-    }
-
-    .gallery__item--v {
-        grid-row-end: span 15;
-    }
-
-    .gallery__item--h {
-        grid-row-end: span 9;
-    }
-
-    .contacts__container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr repeat(2, 0.5fr);
-    }
-
-    .map__frame {
-        grid-area: 1 / 1 / 2 / 3;
-    }
-
-    .contacts__list {
-        grid-area: 2 / 1 / 3 / 3;
-    }
-
-    .building__photo {
-        grid-area: 3 / 1 / 4 / 3;
-        justify-self: start;
-    }
 }
 
 
@@ -394,34 +275,8 @@ h3 {
 
     .footer__container {
         justify-content: flex-start;
-        margin-left: 20px;
     }
 
-}
-
-@media (max-width: 590px) {
-
-    .nav-list {
-        padding: 65px 0 20px 40px;
-        gap: 10px;
-    }
-
-    .nav-link {
-        font-size: 1.4rem;
-    }
-
-    .nav-open {
-        width: 100%;
-    }
-
-    .promo-container {
-        padding: 10px 10px 0 30px;
-    }
-
-    .promo-text {
-        font-size: 2.9rem;
-        line-height: 3.2rem;
-    }
 }
 
 @media (max-width: 480px) {
@@ -430,48 +285,13 @@ h3 {
         font-size: 20px;
     }
 
-    .promo__info {
-        padding-top: 60px;
-    }
-
-    .header-contacts-list {
-        flex-direction: column;
-    }
-
     .section__title {
         font-size: 35px;
-    }
-
-    .about__description {
-        font-size: 20px;
-        line-height: 25px;
-    }
-
-    .service__title {
-        font-size: 20px;
-    }
-
-    .service__text {
-        font-size: 18px;
-        line-height: 20px;
-    }
-
-    .services__items {
-        margin-top: 20px;
-        gap: 25px;
-    }
-
-    .org-table {
-        font-size: 12px;
     }
 
 }
 
 @media (max-width: 380px) {
-
-    .building__photo {
-        width: 250px;
-    }
 
     .section__title {
         font-size: 32px;

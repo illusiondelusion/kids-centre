@@ -294,6 +294,10 @@ h3 {
 
 @media (max-width: 620px) {
 
+    .nav__list {
+        padding: 65px 0 20px 30px;
+    }
+
     .footer__container {
         justify-content: flex-start;
     }
