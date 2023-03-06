@@ -116,6 +116,10 @@ h3 {
         line-height: 58px;
     }
 
+    .nav__btn {
+        font-size: 20px;
+    }
+
     .section {
         padding: 30px 0 40px 0;
     }
@@ -186,7 +190,7 @@ h3 {
         width: 100%;
         right: -620px;
         background-color: rgb(28, 104, 226);
-        height: 1090px;
+        height: 100%;
     }
 
     .nav__open {

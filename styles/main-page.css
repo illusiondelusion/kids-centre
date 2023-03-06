@@ -98,6 +98,7 @@ h3 {
 .nav__list {
     display: flex;
     justify-content: center;
+    align-items: baseline;
     padding: 0 4px 0 0;
     list-style: none;
     text-transform: uppercase;

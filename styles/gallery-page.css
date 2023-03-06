@@ -130,6 +130,10 @@ h3 {
         height: 55px;
     }
 
+    .nav__btn {
+        font-size: 20px;
+    }
+
     .section {
         padding: 30px 0 40px 0;
     }
