@@ -110,6 +110,14 @@ td {
     font-weight: 500;
 }
 
+.italic {
+    font-style: italic;
+}
+
+.list-dash {
+    list-style-type: "-";
+}
+
 .org-table {
     margin: 0 auto;
 }
