@@ -99,15 +99,21 @@ h3 {
 }
 
 table,
+th,
 td {
     border: 1px solid #1C69E2;
     border-collapse: collapse;
     padding: 10px 20px;
-    vertical-align: middle;
+    vertical-align: top;
+    text-align: left;
 }
 
 .bold {
     font-weight: 500;
+}
+
+.price-description {
+    padding: 40px 0 20px 0;
 }
 
 .italic {
