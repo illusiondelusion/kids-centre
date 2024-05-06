@@ -264,6 +264,11 @@ td {
         font-size: 22px;
         line-height: 38px;
     }
+
+    .driving_scheme {
+        display: block;
+        width: 300px;
+    }
 }
 
 @media (max-width: 745px) {
