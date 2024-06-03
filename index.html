@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <header class="header">
@@ -64,29 +65,24 @@
         <section class="section section__about"  id="about">
             <div class="container">
                 <p class="about__description">Мы предоставляем социальные услуги в сфере образования, культуры и просвещения, оказываем социальную поддержку и организуем досуг детей и подростков до 18 лет, испытывающих трудности в социальной адаптации.</p>
-                <h3 class="reviews__title">Отзывы родителей:</h3>
-                <div class="reviews__slider slider">
-                    <div class="review__items">
-                        <div class="review__item">
-                            <img class="review__img" src="" alt="">
+                <h3 class="reviews__title">Отзывы родителей о нашей работе:</h3>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="review__img" src="./assets/images/review-1.jpg" alt="">
                         </div>
-                        <div class="review__item">
-                            <img class="review__img" src="" alt="">
+                        <div class="swiper-slide">
+                            <img class="review__img" src="./assets/images/review-2.jpg" alt="">
                         </div>
-                        <div class="review__item">
-                            <img class="review__img" src="" alt="">
+                        <div class="swiper-slide">
+                            <img class="review__img" src="./assets/images/review-3.jpg" alt="">
                         </div>
-                        <div class="review__item">
-                            <img class="review__img" src="" alt="">
+                        <div class="swiper-slide">
+                            <img class="review__img" src="assets/images/review-4.jpg" alt="">
                         </div>
-                        <div class="review__item">
-                            <img class="review__img" src="" alt="">
-                        </div>
+                        <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
-                <button class="btn btn--main">
-                    <a class="btn__link" href="index.html#gallery">cмотреть фото ⟶</a>
-                </button>
             </div>
         </section>
         <section class="section section__services" id="services">
@@ -293,7 +289,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <img class="building__photo" src="./assets/images/sinyaya-ptitsa-building.jpg" alt="Синяя Птица, вход">
+                        <img class="building__photo" src="https://avatars.mds.yandex.net/get-altay/13212052/2a0000018f5929600e1888fc113433030d76/XXXL" alt="Синяя Птица, вход">
                     </div>
             </div>
         </section>
@@ -329,8 +325,7 @@
             </ul>
         </div>
     </footer>
-<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<script src="./js/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./js/index.js"></script>
 </body>
 </html>

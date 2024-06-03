@@ -66,6 +66,7 @@ h3 {
 
 .container {
     max-width: 1440px;
+    min-width: 0;
     margin: 0 auto;
     height: inherit;
 }
@@ -205,9 +206,9 @@ h3 {
 }
 
 .reviews__title {
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto 40px auto;
-    display: none;
+    text-transform: lowercase;
 }
 
 .slider {
@@ -215,26 +216,25 @@ h3 {
     max-width: 100%;
 }
 
-.reviews__slider {
-    display: none;
-    margin-bottom: 40px;
+.swiper {
+    width: 1440px;
+    height: 447px;
 }
 
-.review__items {
+.swiper-wrapper {
     display: flex;
-    width: 2000px;
-    column-gap: 40px;
+    width: 1440px;
 }
 
-.review__item {
-    width: 300px;
-    height: 480px;
-    border: 1px solid #da89b4;
-    border-radius: 20px;
+.swiper-slide {
+    width: 308px;
+    height: 447px;
 }
 
 .review__img {
-    height: 400px;
+    display: block;
+    width: 311px;
+    border-radius: 20px;
 }
 
 .btn {

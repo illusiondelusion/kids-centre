@@ -71,3 +71,12 @@ if (document.documentElement.clientWidth <= 800) {
   promoText.textContent = "Волгоградская Региональная Автономная Некоммерческая Организация \"Центр социальной поддержки и развития детей";
 }
 
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 15,
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
