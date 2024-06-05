@@ -217,13 +217,11 @@ h3 {
 }
 
 .swiper {
-    width: 1440px;
     height: 447px;
 }
 
 .swiper-wrapper {
     display: flex;
-    width: 1440px;
 }
 
 .swiper-slide {
@@ -231,9 +229,14 @@ h3 {
     height: 447px;
 }
 
+.image-slider__image {
+    text-align: center;
+}
+
 .review__img {
     display: block;
     width: 311px;
+    max-width: 100%;
     border-radius: 20px;
 }
 

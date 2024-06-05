@@ -73,10 +73,32 @@ if (document.documentElement.clientWidth <= 800) {
 
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
-  loop: true,
-  slidesPerView: 4,
-  spaceBetween: 15,
+  loop: false,
+  spaceBetween: 10,
   scrollbar: {
     el: '.swiper-scrollbar',
+  },
+  breakpoints: {
+    400: {
+      slidesPerView: 1,
+    },
+    490: {
+      slidesPerView: 1.4,
+    },
+    590: {
+      slidesPerView: 1.7,
+    },
+    670: {
+      slidesPerView: 2,
+    },
+    860: {
+      slidesPerView: 2.5,
+    },
+    1190: {
+      slidesPerView: 3.5,
+    },
+    1440: {
+      slidesPerView: 4,
+    },
   },
 });
