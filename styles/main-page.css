@@ -535,6 +535,8 @@ h3 {
 
 .building__photo {
     width: 300px;
+    height: 300px;
+    object-fit: cover;
     grid-area: 2 / 2 / 3 / 3;
 }
 
@@ -695,6 +697,8 @@ h3 {
 
     .building__photo {
         width: 300px;
+        height: auto;
+        object-fit: fill;
         grid-area: 2 / 2 / 3 / 3;
         justify-self: end;
     }
@@ -1052,7 +1056,7 @@ h3 {
 @media (max-width: 380px) {
 
     .building__photo {
-        width: 250px;
+        width: 220px;
     }
 
     .section__title {
