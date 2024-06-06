@@ -207,7 +207,7 @@ h3 {
 
 .reviews__title {
     max-width: 500px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto;
     text-transform: lowercase;
 }
 
@@ -217,7 +217,7 @@ h3 {
 }
 
 .swiper {
-    height: 447px;
+    margin: 40px 0;
 }
 
 .swiper-wrapper {
@@ -229,12 +229,14 @@ h3 {
     height: 447px;
 }
 
-.image-slider__image {
-    text-align: center;
+.swiper .swiper-scrollbar-drag {
+    cursor: pointer;
+    background-color: #be6494;
 }
 
 .review__img {
     display: block;
+    text-align: center;
     width: 311px;
     max-width: 100%;
     border-radius: 20px;
@@ -855,7 +857,7 @@ h3 {
 }
 
 @media (max-width: 745px) {
-    
+
     h1 {
         font-size: 75px;
         line-height: 90px;

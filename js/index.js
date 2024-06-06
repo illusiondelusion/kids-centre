@@ -77,6 +77,7 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 10,
   scrollbar: {
     el: '.swiper-scrollbar',
+    draggable: true,
   },
   breakpoints: {
     400: {
