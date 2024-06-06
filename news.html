@@ -5,117 +5,169 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новости - Центр социальной поддержки и развития детей "Синяя птица"</title>
-    <meta name="description" content="Мы предоставляем услуги в сфере образования, культуры и просвещения, оказываем социальную поддержку и организуем досуг детей и подростков до 18 лет, испытывающих трудности в социальной адаптации"> 
-    <meta property="og:title" content='Центр социальной поддержки и развития детей "Синяя птица"' />
+    <meta name="description" content='Новости Центра социальной поддержки и развития детей "Синяя Птица". Краткая информация о наших мероприятиях'>
+    <meta property="og:title" content='Новости Центра социальной поддержки и развития детей "Синяя птица"' />
     <meta property="og:image" content="./assets/images/logo.png" />
-    <meta property="og:description" content="Мы предоставляем услуги в сфере образования, культуры и просвещения, оказываем социальную поддержку и организуем досуг детей и подростков до 18 лет, испытывающих трудности в социальной адаптации" />
-    <link rel="stylesheet" href="style.css">
+    <meta property="og:description" content='Новости Центра социальной поддержки и развития детей "Синяя Птица". Краткая информация о наших мероприятиях' />
+    <link rel="stylesheet" href="./styles/news-page.css">
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Jost:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="header-container">
-                <div class="upper-header-container">
+            <div class="header__container">
+                <a href="/">
                     <div class="logo">
 
                     </div>
-                    <div class="hamburger">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                    </div>
+                </a>
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
                 </div>
-                    <ul class="header-contacts-list">
-                        <li class="contacts-list-item item-hidden">
-                            г.Волжский, ул. им. Карбышева, 28
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="/">Главная</a></li>
+                        <li class="nav__item"><button class="nav__btn">О нас ▾</button>
+                            <div class="dropdown">
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item"><a href="index.html#about" class="nav__link dropdown__link">Общая информация</a></li>
+                                    <li class="dropdown__item"><a href="./teachers.html" class="nav__link dropdown__link">Наши специалисты</a></li>
+                                    <li class="dropdown__item"><a href="./organization.html" class="nav__link dropdown__link">Об организации</a></li>
+                                    <li class="dropdown__item"><a href="./documents.html" class="nav__link dropdown__link">Документы</a></li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="contacts-list-item">
-                            <a class="contacts-list-item-tel" href="tel:+79053956822">
-                                +7 (905) 395-68-22
-                            </a>
-                            <a class="contacts-list-item-tel" href="tel:+79093816787">
-                                +7 (909) 381-67-87
-                            </a>
-                        </li>
-                        <li class="contacts-list-item">
-                             Пн. - Пт. 14:00-20:00
-                        </li>
-                        <li class="contacts-list-item item-hidden">
-                            <a class="contact-link" href="mailto:sinyaya_ptica2022@mail.ru">
-                                sinyaya_ptica2022@mail.ru
-                            </a>
-                        </li>
+                        <li class="nav__item"><a class="nav__link" href="index.html#news">Новости</a></li>
+                        <li class="nav__item"><a class="nav__link" href="./gallery.html">Галерея</a></li>
+                        <li class="nav__item"><a class="nav__link" href="index.html#services">Услуги</a></li>
+                        <li class="nav__item"><a class="nav__link" href="index.html#contacts">Контакты</a></li>
+                        <li class="nav__item"><a class="nav__link" href="./useful.html">Полезное</a></li>
                     </ul>
-                    <nav class="nav">
-                        <ul class="nav__list">
-                            <li class="nav__item"><a class="nav__link" href="/">Главная</a></li>
-                            <li class="nav__item"><button class="nav__btn">О нас ▾</button>
-                                <div class="dropdown">
-                                    <ul class="dropdown__list">
-                                        <li class="dropdown__item"><a href="index.html#about" class="nav__link dropdown__link">Общая информация</a></li>
-                                        <li class="dropdown__item"><a href="./teachers.html" class="nav__link dropdown__link">Наши специалисты</a></li>
-                                        <li class="dropdown__item"><a href="./organization.html" class="nav__link dropdown__link">Об организации</a></li>
-                                        <li class="dropdown__item"><a href="./documents.html" class="nav__link dropdown__link">Документы</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav__item"><a class="nav__link" href="index.html#news">Новости</a></li>
-                            <li class="nav__item"><a class="nav__link" href="./gallery.html">Галерея</a></li>
-                            <li class="nav__item"><a class="nav__link" href="index.html#services">Услуги</a></li>
-                            <li class="nav__item"><a class="nav__link" href="index.html#contacts">Контакты</a></li>
-                        </ul>
-                    </nav>
+                </nav>
             </div>
         </div>
     </header>
     <main class="main">
-        <section class="section section-news">
-            <h2 class="h-centered">Новости</h2>
-            <div class="news-item">
-                <img src="./assets/photos/concert1.jpg" alt="Концерт" class="news-img">
-                <p class="news-date">20.07.2022</p>
-                <h3 class="news-title">В центре "Синяя птица" прошел музыкальный концерт</h3>
-                <p class="news-text">Выступили ученики музыкальной школы №1 г. Волжского с преподавателем
-                Двойниной Галиной Борисовной</p>
+        <section class="section section__news">
+            <div class="container">
+                <h2 class="section__title">Новости</h2>
+                <div class="news__items">
+                    <article class="news__item">
+                        <img src="./assets/photos/thematic_class/photo-9.jpg" alt="День защитника Отечества" class="news__img">
+                        <p class="news__date">23.02.2024</p>
+                        <h3 class="news__title">День защитника Отечества</h3>
+                        <p class="news__description">В феврале у нас прошли тематические занятия, посвященные Дню защитника Отечества. Дети с ОВЗ также делали подарки к Дню защитника Отечества своим папам и дедушкам!</p>
+                    </article>
+                    <article class="news__item">
+                        <img src="./assets/photos/new_year/photo-10.jpg" alt="Новый год" class="news__img">
+                        <p class="news__date">29.12.2023</p>
+                        <h3 class="news__title">Новый год</h3>
+                        <p class="news__description">с 25.12 по 29.12 у каждой группы "Синей птицы" прошли замечательные новогодние праздники, дети веселились, показывали Деду Морозу чему они научились и получили вкусные подарки</p>
+                    </article>
+                    <article class="news__item">
+                        <img src="./assets/photos/open_lesson/photo-7.jpg" alt="Открытые занятия" class="news__img">
+                        <p class="news__date">15.12.2023</p>
+                        <h3 class="news__title">Открытые занятия</h3>
+                        <p class="news__description">В декабре 2023 года для родителей "Синей птицы" прошли открытые занятия, где они смогли оценить услуги, которые получают их дети, а также сами с удовольствием приобщились к процессу</p>
+                    </article>
+                    <article class="news__item">
+                        <img src="./assets/photos/first_sept/photo-9.jpg" alt="День знаний" class="news__img">
+                        <p class="news__date">01.09.2023</p>
+                        <h3 class="news__title">День знаний</h3>
+                        <p class="news__description">1 сентября в центре социальной поддержки и развития детей "Синяя птица" состоялось праздничное мероприятие, посвященное Дню Знаний. Вместе с Шапокляк дети отправились в увлекательное путешествие в страну Знаний, участвовали в конкурсах и выполняли интересные задания</p>
+                    </article>
+                    <article class="news__item">
+                        <img src="./assets/photos/thematic_class/photo-4.jpg" alt="День защиты детей" class="news__img">
+                        <p class="news__date">01.06.2023</p>
+                        <h3 class="news__title">День защиты детей</h3>
+                        <p class="news__description">В день защиты детей наш Центр превратился в настоящую страну чудес, где каждый ребенок смог почувствовать себя героем любимой сказки, а взрослые - волшебниками, исполняющими желания маленьких героев</p>
+                    </article>
+                    <article class="news__item">
+                        <img src="./assets/photos/open_lesson/photo-5.jpg" alt="Правополушарное рисование" class="news__img">
+                        <p class="news__date">04.03.2023</p>
+                        <h3 class="news__title">Правополушарное рисование</h3>
+                        <p class="news__description">Родители с детьми прекрасно провели время на нашем семейном мастер-классе по правополушарному рисованию</p>
+                    </article>
+                    <article class="news__item">
+                        <img src="./assets/photos/masl2.jpg" alt="Масленница" class="news__img">
+                        <p class="news__date">24.02.2023</p>
+                        <h3 class="news__title">Масленница</h3>
+                        <p class="news__description">24 февраля в "Синей птице" отпраздновали масленницу</p>
+                    </article>
+                    <article class="news__item">
+                        <img src="./assets/photos/contest1.jpg" alt="Многоцветие талантов" class="news__img">
+                        <p class="news__date">18.02.2023</p>
+                        <h3 class="news__title">Многоцветие талантов</h3>
+                        <p class="news__description">Наши ребята приняли участие в конкурсе "Многоцветие талантов" с песней "Детство"</p>
+                    </article>
+                    <article class="news__item">
+                        <img src="./assets/photos/art_class/photo-9.jpg" alt="Забота о животных" class="news__img">
+                        <p class="news__date">13.02.2023</p>
+                        <h3 class="news__title">Забота о животных</h3>
+                        <p class="news__description">С 6.02 по 10.02 в нашем Центре прошли тематические занятия, посвященные заботе о животных в холодное время года</p>
+                    </article>
+                    <article class="news__item">
+                        <img src="./assets/photos/thematic_class/photo-12.jpg" alt="Сталинградская битва" class="news__img">
+                        <p class="news__date">03.02.2023</p>
+                        <h3 class="news__title">Сталинградская битва</h3>
+                        <p class="news__description">В нашем Центре прошли тематические занятия, посвященные Сталинградской битве</p>
+                    </article>
+                    <article class="news__item">
+                        <img src="./assets/photos/new_year/photo-12.jpg" alt="Новый год" class="news__img">
+                        <p class="news__date">16.01.2023</p>
+                        <h3 class="news__title">НОВОГОДНЯЯ СКАЗКА</h3>
+                        <p class="news__description">23, 28 и 29 декабря в нашем Центре проходила постановка "Щелкунчик" с участием младшей, средней и старшей группы. Детей посетил Дед Мороз и подарил новогодние подарки</p>
+                    </article>
+                    <article class="news__item">
+                        <img src="./assets/photos/open_lesson/photo-1.jpg" alt="День матери" class="news__img">
+                        <p class="news__date">28.11.2023</p>
+                        <h3 class="news__title">День матери</h3>
+                        <p class="news__description">Во всех группах прошли открытые уроки, посвященные Дню Матери</p>
+                    </article>
+                    <article class="news__item">
+                        <img src="./assets/photos/first_sept/photo-8.jpg" alt="1 сентября" class="news__img">
+                        <p class="news__date">01.09.2022</p>
+                        <h3 class="news__title">День знаний</h3>
+                        <p class="news__description">У нас в Центре прошел праздник, посвященный дню знаний. Первоклассники поучаствовали в мастер-классе "Меловая доска"</p>
+                    </article>
+                    <article class="news__item">
+                        <img src="./assets/photos/concert1.jpg" alt="Музыкальный концерт" class="news__img">
+                        <p class="news__date">20.07.2022</p>
+                        <h3 class="news__title">МУЗЫКАЛЬНЫЙ КОНЦЕРТ</h3>
+                        <p class="news__description">В нашем Центре выступили ученики музыкальной школы №1 г. Волжского с преподавателем Двойниной Галиной Борисовной</p>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer-container" itemscope itemtype="https://schema.org/Organization">
+            <div class="footer__container" itemscope itemtype="https://schema.org/Organization">
                 <div class="copyright">
-                    © 2022-2023 ВРАНО <span itemprop="name">"Центр социальной поддержки и развития детей "Синяя птица"</span>
+                    © <span class="year"></span> ВРАНО <span itemprop="name">"Центр социальной поддержки и развития детей "Синяя птица"</span>
                 </div>
-                <ul class="footer-navigation">
-                    <li><a href="./news.html">Новости</a></li>
+                <ul class="footer__navigation">
+                    <li><a href="index.html#news">Новости</a></li>
+                    <li><a href="./gallery.html">Галерея</a></li>
                     <li><a href="./organization.html">Сведения об организации</a></li>
-                    <li><a href="./schedule.html">Расписание</a></li>
                     <li><a href="./documents.html">Документы</a></li>
                     <li><a href="index.html#contacts">Контакты</a></li>
                 </ul>
-                <ul class="footer-contacts-list">
-                    <li class="contacts-list-item footer-contacts" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                        <span itemprop="addressLocality">г.Волжский</span>,
-                        <span itemprop="streetAddress">ул. им. Карбышева, 28</span>
-                    </li>
-                    <li class="contacts-list-item footer-contacts">
-                        <a class="contacts-list-item-tel" href="tel:+79053956822">
+                <ul class="footer-contacts__list">
+                    <li class="contacts__item contacts__item--tel">
+                        <a class="tel__link" href="tel:+79053956822">
                             <span itemprop="telephone">+7 (905) 395-68-22</span>
                         </a>
-                        <a class="contacts-list-item-tel" href="tel:+79093816787">
+                        <a class="tel__link" href="tel:+79093816787">
                             <span itemprop="telephone">+7 (909) 381-67-87</span>
                         </a>
                     </li>
-                    <li class="contacts-list-item footer-contacts" itemscope itemtype="https://schema.org/LocalBusiness">
-                        <time itemprop="openingHours" datetime="Mo-Fr 14:00-20:00">
-                            Пн. - Пт. 14:00-20:00
-                        </time>
-                    </li>
-                    <li class="contacts-list-item footer-contacts">
+                    <li class="contacts__item contacts__item--mail">
                         <a href="mailto:sinyaya_ptica2022@mail.ru">
                             <span itemprop="email">
                                 sinyaya_ptica2022@mail.ru
@@ -126,8 +178,6 @@
             </div>
         </div>
     </footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="./js/slick.min.js"></script>
 <script src="./js/index.js"></script>
 </body>
 </html>

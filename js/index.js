@@ -103,3 +103,7 @@ const swiper = new Swiper('.swiper', {
     },
   },
 });
+
+let currentYear = new Date().getFullYear();
+const year = document.querySelector('.year');
+year.textContent = `${currentYear}`;
