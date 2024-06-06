@@ -1,7 +1,7 @@
 "use strict"
 
 document.addEventListener('DOMContentLoaded', function() {
-    const fornm = document.getElementById('form');
+    const form = document.getElementById('form');
     form.addEventListener('submit', formSend);
 
     async function formSend(e) {
@@ -17,17 +17,21 @@ document.addEventListener('DOMContentLoaded', function() {
         for (let index = 0; index < formReq.length; index++) {
             const input = formReq[index];
             formRemoveError(input);
-            
+
+            if (input.value === '') {
+                formAddError(input);
+                error++;
+            }
         }
     }
 
     function formAddError(input) {
         input.parentElement.classList.add('_error');
         input.classList.add('_error');
-    };
+    }
 
     function formRemoveError(input) {
         input.parentElement.classList.remove('_error');
         input.classList.remove('_error');
-    };
+    }
 })

@@ -101,6 +101,10 @@ textarea:focus {
     font: inherit;
 }
 
+.review__input._error {
+    box-shadow: 0 0 15px #ff2e74;
+}
+
 textarea {
     resize: none;
     height: 300px;
@@ -111,7 +115,7 @@ textarea {
     align-self: flex-start;
     padding: 10px;
     border: 1px solid #6291dd;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: 0.3s;
     background-color: #6291dd;
     cursor: pointer;
@@ -122,6 +126,13 @@ textarea {
 
 .btn:hover {
     box-shadow: 1px 1px 4px #6291dd;
+}
+
+.btn:focus {
+    color: #ffffff;
+    background-color: #ff97ba;
+    box-shadow: 1px 1px 4px #ff97ba;
+    border: 1px solid #ff97ba;
 }
 
 @media (max-width: 1480px) {
