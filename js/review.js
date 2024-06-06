@@ -2,12 +2,19 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('form');
+    const p = document.querySelector('.error-message');
     form.addEventListener('submit', formSend);
 
     async function formSend(e) {
         e.preventDefault();
 
         let error = formValidate(form);
+
+        if (error === 0) {
+            p.textContent = '';
+        } else {
+            p.textContent = 'Заполните обязательные поля!';
+        }
     }
 
     function formValidate(form) {
@@ -23,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 error++;
             }
         }
+
+        return error;
     }
 
     function formAddError(input) {

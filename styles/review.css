@@ -102,7 +102,7 @@ textarea:focus {
 }
 
 .review__input._error {
-    box-shadow: 0 0 15px #ff2e74;
+    background-color: #ff6a9b46;
 }
 
 textarea {
