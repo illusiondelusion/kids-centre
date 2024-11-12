@@ -140,8 +140,10 @@ h3 {
                 translateY(-70px);
 }
 
-.teacher__card:nth-child(8) img {
-    transform: translateY(0px);
+.teacher__card:nth-child(6) img {
+    width: 300px;
+    transform: translateX(-40px)
+                translateY(-10px);
 }
 
 .teacher__name {
